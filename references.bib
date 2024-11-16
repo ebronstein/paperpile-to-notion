@@ -284,6 +284,34 @@
   urldate      = {2024-11-16}
 }
 
+@ARTICLE{Gale-MegaBlocks-EfficientMixture-of-Experts-2022,
+  title        = {{MegaBlocks}: Efficient sparse training with
+                  Mixture-of-Experts},
+  author       = {Gale, Trevor and Narayanan, Deepak and Young, Cliff and
+                  Zaharia, Matei},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2022-11-28},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {We present MegaBlocks, a system for efficient
+                  Mixture-of-Experts (MoE) training on GPUs. Our system is
+                  motivated by the limitations of current frameworks, which
+                  restrict the dynamic routing in MoE layers to satisfy the
+                  constraints of existing software and hardware. These
+                  formulations force a tradeoff between model quality and
+                  hardware efficiency, as users must choose between dropping
+                  tokens from the computation or wasting computation and memory
+                  on padding. To address these limitations, we reformulate MoE
+                  computation in terms of block-sparse operations and develop
+                  new block-sparse GPU kernels that efficiently handle the
+                  dynamism present in MoEs. Our approach never drops tokens and
+                  maps efficiently to modern hardware, enabling end-to-end
+                  training speedups of up to 40\% over MoEs trained with the
+                  state-of-the-art Tutel library and 2.4x over DNNs trained with
+                  the highly-optimized Megatron-LM framework.},
+  urldate      = {2024-11-16}
+}
+
 @ARTICLE{Dubey-Llama-3Models-2024,
   title        = {The Llama 3 herd of models},
   author       = {Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and
