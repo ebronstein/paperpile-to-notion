@@ -382,6 +382,42 @@
   urldate      = {2024-11-17}
 }
 
+@ARTICLE{Murty-NNetscape-NavigatorDemonstrator-2024,
+  title        = {{NNetscape} Navigator: Complex demonstrations for web agents
+                  without a demonstrator},
+  author       = {Murty, Shikhar and Bahdanau, Dzmitry and Manning, Christopher
+                  D},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2024-10-03},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {We introduce NNetscape Navigator (NNetnav), a method for
+                  training web agents entirely through synthetic demonstrations.
+                  These demonstrations are collected by first interacting with a
+                  browser to generate trajectory rollouts, which are then
+                  retroactively labeled into instructions using a language
+                  model. Most work on training browser agents has relied on
+                  expensive human supervision, and the limited previous work on
+                  such interaction-first synthetic data techniques has failed to
+                  provide effective search through the exponential space of
+                  exploration. In contrast, NNetnav exploits the hierarchical
+                  structure of language instructions to make this search more
+                  tractable: complex instructions are typically decomposable
+                  into simpler subtasks, allowing NNetnav to automatically prune
+                  interaction episodes when an intermediate trajectory cannot be
+                  annotated with a meaningful sub-task. We use NNetnav
+                  demonstrations from a language model for supervised
+                  fine-tuning of a smaller language model policy, and find
+                  improvements of 6 points on WebArena and over 20 points on
+                  MiniWoB++, two popular environments for web-agents. Notably,
+                  on WebArena, we observe that language model policies can be
+                  further enhanced when fine-tuned with NNetnav demonstrations
+                  derived from the same language model. Finally, we collect and
+                  release a dataset of over 6k NNetnav demonstrations on
+                  WebArena, spanning a diverse and complex set of instructions.},
+  urldate      = {2024-11-17}
+}
+
 @ARTICLE{Dubey-Llama-3Models-2024,
   title        = {The Llama 3 herd of models},
   author       = {Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and
