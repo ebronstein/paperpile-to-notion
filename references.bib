@@ -118,36 +118,23 @@
   urldate      = {2024-10-05}
 }
 
-@ARTICLE{Bosio-Synthesizing-InterpretableSearch-2024,
-  title        = {Synthesizing interpretable control policies through large
-                  language model guided search},
-  author       = {Bosio, Carlo and Mueller, Mark W},
-  journaltitle = {ArXiv},
-  volume       = {abs/2410.05406},
-  date         = {2024-10-07},
-  abstract     = {The combination of Large Language Models (LLMs), systematic
-                  evaluation, and evolutionary algorithms has enabled
-                  breakthroughs in combinatorial optimization and scientific
-                  discovery. We propose to extend this powerful combination to
-                  the control of dynamical systems, generating interpretable
-                  control policies capable of complex behaviors. With our novel
-                  method, we represent control policies as programs in standard
-                  languages like Python. We evaluate candidate controllers in
-                  simulation and evolve them using a pre-trained LLM. Unlike
-                  conventional learning-based control techniques, which rely on
-                  black box neural networks to encode control policies, our
-                  approach enhances transparency and interpretability. We still
-                  take advantage of the power of large AI models, but leverage
-                  it at the policy design phase, ensuring that all system
-                  components remain interpretable and easily verifiable at
-                  runtime. Additionally, the use of standard programming
-                  languages makes it straightforward for humans to finetune or
-                  adapt the controllers based on their expertise and intuition.
-                  We illustrate our method through its application to the
-                  synthesis of an interpretable control policy for the pendulum
-                  swing-up and the ball in cup tasks. We make the code available
-                  at
-                  https://github.com/muellerlab/synthesizing\_interpretable\_control\_policies.git}
+@ARTICLE{Bosio-Generating-InterpretableSynthesis-Other,
+  title    = {Generating interpretable agent policies through {LLM} guided
+              program synthesis},
+  author   = {Bosio, Carlo and Guarrera, Matteo},
+  abstract = {We propose a novel method for obtaining interpretable robot
+              control policies by integrating Large Language Models (LLMs) with
+              evolutionary computation. Our approach addresses the challenge of
+              designing control policies for complexrobots when interpretability
+              is necessary for safe operation. We represent a control policy as
+              human-readable Python codethat can be directly deployed. This
+              allows for an intuitive understanding of the system’s logic, and
+              enables modificationswith a clear understanding of the
+              consequences. Our method leverages an LLM for code to generate
+              candidate programs,and then refines them through a process that
+              includes simulation-based evaluation and optimization of the
+              program parameters. We test our method on aerial robots and
+              cooperative multi-robot systems.}
 }
 
 @ARTICLE{Kwon-Efficient-MemoryPagedAttention-2023,
