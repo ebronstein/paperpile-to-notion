@@ -1,15 +1,3 @@
-@ARTICLE{Agarwal-PerSim-Data-EfficientSimulators-2021,
-  title        = {{PerSim}: Data-Efficient Offline Reinforcement Learning with
-                  Heterogeneous Agents via Personalized Simulators},
-  author       = {Agarwal, Anish and Alomar, Abdullah and Alumootil, Varkey and
-                  Shah, Devavrat and Shen, Dennis and Xu, Zhi and Yang, Cindy},
-  journaltitle = {Advances in Neural Information Processing Systems},
-  volume       = {34},
-  pages        = {18564--18576},
-  date         = {2021-12-06},
-  urldate      = {2024-11-01}
-}
-
 @ARTICLE{Jiang-MInference-1Attention-2024,
   title        = {{MInference} 1.0: Accelerating pre-filling for long-context
                   {LLMs} via dynamic sparse attention},
@@ -2692,6 +2680,18 @@
   urldate      = {2024-10-22}
 }
 
+@ARTICLE{Agarwal-PerSim-Data-EfficientSimulators-2021,
+  title        = {{PerSim}: Data-Efficient Offline Reinforcement Learning with
+                  Heterogeneous Agents via Personalized Simulators},
+  author       = {Agarwal, Anish and Alomar, Abdullah and Alumootil, Varkey and
+                  Shah, Devavrat and Shen, Dennis and Xu, Zhi and Yang, Cindy},
+  journaltitle = {Advances in Neural Information Processing Systems},
+  volume       = {34},
+  pages        = {18564--18576},
+  date         = {2021-12-06},
+  urldate      = {2024-11-01}
+}
+
 @ARTICLE{Rajbhandari-ZeRO-MemoryModels-2019,
   title        = {{ZeRO}: Memory optimizations toward training Trillion
                   parameter models},
@@ -3732,4 +3732,46 @@
                   practices which explicitly account for (and contend with) the
                   changing and influenceable nature of human preferences.},
   urldate      = {2025-03-13}
+}
+
+@ARTICLE{Tian-Towards-ModelingLearning-2023,
+  title        = {Towards modeling and influencing the dynamics of human
+                  learning},
+  author       = {Tian, Ran and Tomizuka, Masayoshi and Dragan, Anca and Bajcsy,
+                  Andrea},
+  journaltitle = {arXiv [cs.RO]},
+  date         = {2023-01-02},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.RO},
+  abstract     = {Humans have internal models of robots (like their physical
+                  capabilities), the world (like what will happen next), and
+                  their tasks (like a preferred goal). However, human internal
+                  models are not always perfect: for example, it is easy to
+                  underestimate a robot's inertia. Nevertheless, these models
+                  change and improve over time as humans gather more experience.
+                  Interestingly, robot actions influence what this experience
+                  is, and therefore influence how people's internal models
+                  change. In this work we take a step towards enabling robots to
+                  understand the influence they have, leverage it to better
+                  assist people, and help human models more quickly align with
+                  reality. Our key idea is to model the human's learning as a
+                  nonlinear dynamical system which evolves the human's internal
+                  model given new observations. We formulate a novel
+                  optimization problem to infer the human's learning dynamics
+                  from demonstrations that naturally exhibit human learning. We
+                  then formalize how robots can influence human learning by
+                  embedding the human's learning dynamics model into the robot
+                  planning problem. Although our formulations provide concrete
+                  problem statements, they are intractable to solve in full
+                  generality. We contribute an approximation that sacrifices the
+                  complexity of the human internal models we can represent, but
+                  enables robots to learn the nonlinear dynamics of these
+                  internal models. We evaluate our inference and planning
+                  methods in a suite of simulated environments and an in-person
+                  user study, where a 7DOF robotic arm teaches participants to
+                  be better teleoperators. While influencing human learning
+                  remains an open problem, our results demonstrate that this
+                  influence is possible and can be helpful in real human-robot
+                  interaction.},
+  urldate      = {2025-03-18}
 }
