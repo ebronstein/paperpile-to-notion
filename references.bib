@@ -10,44 +10,6 @@
   urldate      = {2024-11-01}
 }
 
-@ARTICLE{Agrawal-GEPA-ReflectiveLearning-2025,
-  title        = {{GEPA}: Reflective prompt evolution can outperform
-                  reinforcement learning},
-  author       = {Agrawal, Lakshya A and Tan, Shangyin and Soylu, Dilara and
-                  Ziems, Noah and Khare, Rishi and Opsahl-Ong, Krista and
-                  Singhvi, Arnav and Shandilya, Herumb and Ryan, Michael J and
-                  Jiang, Meng and Potts, Christopher and Sen, Koushik and
-                  Dimakis, Alexandros G and Stoica, Ion and Klein, Dan and
-                  Zaharia, Matei and Khattab, Omar},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-07-25},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {Large language models (LLMs) are increasingly adapted to
-                  downstream tasks via reinforcement learning (RL) methods like
-                  Group Relative Policy Optimization (GRPO), which often require
-                  thousands of rollouts to learn new tasks. We argue that the
-                  interpretable nature of language can often provide a much
-                  richer learning medium for LLMs, compared with policy
-                  gradients derived from sparse, scalar rewards. To test this,
-                  we introduce GEPA (Genetic-Pareto), a prompt optimizer that
-                  thoroughly incorporates natural language reflection to learn
-                  high-level rules from trial and error. Given any AI system
-                  containing one or more LLM prompts, GEPA samples system-level
-                  trajectories (e.g., reasoning, tool calls, and tool outputs)
-                  and reflects on them in natural language to diagnose problems,
-                  propose and test prompt updates, and combine complementary
-                  lessons from the Pareto frontier of its own attempts. As a
-                  result of GEPA's design, it can often turn even just a few
-                  rollouts into a large quality gain. Across four tasks, GEPA
-                  outperforms GRPO by 10\% on average and by up to 20\%, while
-                  using up to 35x fewer rollouts. GEPA also outperforms the
-                  leading prompt optimizer, MIPROv2, by over 10\% across two
-                  LLMs, and demonstrates promising results as an inference-time
-                  search strategy for code optimization.},
-  urldate      = {2025-09-29}
-}
-
 @ARTICLE{Jiang-MInference-1Attention-2024,
   title        = {{MInference} 1.0: Accelerating pre-filling for long-context
                   {LLMs} via dynamic sparse attention},
@@ -4217,5 +4179,43 @@
                   effective AI assistants in complex environments. Our code and
                   models are available at
                   https://github.com/cassidylaidlaw/minecraft-building-assistance-game.},
+  urldate      = {2025-09-29}
+}
+
+@ARTICLE{Agrawal-GEPA-ReflectiveLearning-2025,
+  title        = {{GEPA}: Reflective prompt evolution can outperform
+                  reinforcement learning},
+  author       = {Agrawal, Lakshya A and Tan, Shangyin and Soylu, Dilara and
+                  Ziems, Noah and Khare, Rishi and Opsahl-Ong, Krista and
+                  Singhvi, Arnav and Shandilya, Herumb and Ryan, Michael J and
+                  Jiang, Meng and Potts, Christopher and Sen, Koushik and
+                  Dimakis, Alexandros G and Stoica, Ion and Klein, Dan and
+                  Zaharia, Matei and Khattab, Omar},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-07-25},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {Large language models (LLMs) are increasingly adapted to
+                  downstream tasks via reinforcement learning (RL) methods like
+                  Group Relative Policy Optimization (GRPO), which often require
+                  thousands of rollouts to learn new tasks. We argue that the
+                  interpretable nature of language can often provide a much
+                  richer learning medium for LLMs, compared with policy
+                  gradients derived from sparse, scalar rewards. To test this,
+                  we introduce GEPA (Genetic-Pareto), a prompt optimizer that
+                  thoroughly incorporates natural language reflection to learn
+                  high-level rules from trial and error. Given any AI system
+                  containing one or more LLM prompts, GEPA samples system-level
+                  trajectories (e.g., reasoning, tool calls, and tool outputs)
+                  and reflects on them in natural language to diagnose problems,
+                  propose and test prompt updates, and combine complementary
+                  lessons from the Pareto frontier of its own attempts. As a
+                  result of GEPA's design, it can often turn even just a few
+                  rollouts into a large quality gain. Across four tasks, GEPA
+                  outperforms GRPO by 10\% on average and by up to 20\%, while
+                  using up to 35x fewer rollouts. GEPA also outperforms the
+                  leading prompt optimizer, MIPROv2, by over 10\% across two
+                  LLMs, and demonstrates promising results as an inference-time
+                  search strategy for code optimization.},
   urldate      = {2025-09-29}
 }
