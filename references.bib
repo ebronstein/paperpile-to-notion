@@ -4578,3 +4578,43 @@
                   users in multi-turn setups.},
   urldate      = {2025-10-13}
 }
+
+@ARTICLE{Liu-Part-IReasoning-2025,
+  title        = {Part {I}: Tricks or traps? A deep dive into {RL} for {LLM}
+                  reasoning},
+  author       = {Liu, Zihe and Liu, Jiashun and He, Yancheng and Wang, Weixun
+                  and Liu, Jiaheng and Pan, Ling and Hu, Xinyu and Xiong,
+                  Shaopan and Huang, Ju and Hu, Jian and Huang, Shengyi and
+                  Yang, Siran and Wang, Jiamang and Su, Wenbo and Zheng, Bo},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-08-11},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {Reinforcement learning for LLM reasoning has rapidly emerged
+                  as a prominent research area, marked by a significant surge in
+                  related studies on both algorithmic innovations and practical
+                  applications. Despite this progress, several critical
+                  challenges remain, including the absence of standardized
+                  guidelines for employing RL techniques and a fragmented
+                  understanding of their underlying mechanisms. Additionally,
+                  inconsistent experimental settings, variations in training
+                  data, and differences in model initialization have led to
+                  conflicting conclusions, obscuring the key characteristics of
+                  these techniques and creating confusion among practitioners
+                  when selecting appropriate techniques. This paper
+                  systematically reviews widely adopted RL techniques through
+                  rigorous reproductions and isolated evaluations within a
+                  unified open-source framework. We analyze the internal
+                  mechanisms, applicable scenarios, and core principles of each
+                  technique through fine-grained experiments, including datasets
+                  of varying difficulty, model sizes, and architectures. Based
+                  on these insights, we present clear guidelines for selecting
+                  RL techniques tailored to specific setups, and provide a
+                  reliable roadmap for practitioners navigating the RL for the
+                  LLM domain. Finally, we reveal that a minimalist combination
+                  of two techniques can unlock the learning capability of
+                  critic-free policies using vanilla PPO loss. The results
+                  demonstrate that our simple combination consistently improves
+                  performance, surpassing strategies like GRPO and DAPO.},
+  urldate      = {2025-10-20}
+}
