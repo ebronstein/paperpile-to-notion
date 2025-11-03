@@ -3736,6 +3736,81 @@
   urldate      = {2025-09-29}
 }
 
+@ARTICLE{MiniMax-MiniMax-M1-ScalingAttention-2025,
+  title        = {{MiniMax}-{M1}: Scaling test-time compute efficiently with
+                  lightning attention},
+  author       = {{MiniMax} and Chen, Aili and Li, Aonian and Gong, Bangwei and
+                  Jiang, Binyang and Fei, Bo and Yang, Bo and Shan, Boji and Yu,
+                  Changqing and Wang, Chao and Zhu, Cheng and Xiao, Chengjun and
+                  Du, Chengyu and Zhang, Chi and Qiao, Chu and Zhang, Chunhao
+                  and Du, Chunhui and Guo, Congchao and Chen, Da and Ding,
+                  Deming and Sun, Dianjun and Li, Dong and Jiao, Enwei and Zhou,
+                  Haigang and Zhang, Haimo and Ding, Han and Sun, Haohai and
+                  Feng, Haoyu and Cai, Huaiguang and Zhu, Haichao and Sun, Jian
+                  and Zhuang, Jiaqi and Cai, Jiaren and Song, Jiayuan and Zhu,
+                  Jin and Li, Jingyang and Tian, Jinhao and Liu, Jinli and Xu,
+                  Junhao and Yan, Junjie and Liu, Junteng and He, Junxian and
+                  Feng, Kaiyi and Yang, Ke and Xiao, Kecheng and Han, Le and
+                  Wang, Leyang and Yu, Lianfei and Feng, Liheng and Li, Lin and
+                  Zheng, Lin and Du, Linge and Yang, Lingyu and Zeng, Lunbin and
+                  Yu, Minghui and Tao, Mingliang and Chi, Mingyuan and Zhang,
+                  Mozhi and Lin, Mujie and Hu, Nan and Di, Nongyu and Gao, Peng
+                  and Li, Pengfei and Zhao, Pengyu and Ren, Qibing and Xu, Qidi
+                  and Li, Qile and Wang, Qin and Tian, Rong and Leng, Ruitao and
+                  Chen, Shaoxiang and Chen, Shaoyu and Shi, Shengmin and Weng,
+                  Shitong and Guan, Shuchang and Yu, Shuqi and Li, Sichen and
+                  Zhu, Songquan and Li, Tengfei and Cai, Tianchi and Liang,
+                  Tianrun and Cheng, Weiyu and Kong, Weize and Li, Wenkai and
+                  Chen, Xiancai and Song, Xiangjun and Luo, Xiao and Su, Xiao
+                  and Li, Xiaobo and Han, Xiaodong and Hou, Xinzhu and Lu, Xuan
+                  and Zou, Xun and Shen, Xuyang and Gong, Yan and Ma, Yan and
+                  Wang, Yang and Shi, Yiqi and Zhong, Yiran and Duan, Yonghong
+                  and Fu, Yongxiang and Hu, Yongyi and Gao, Yu and Fan,
+                  Yuanxiang and Yang, Yufeng and Li, Yuhao and Hu, Yulin and
+                  Huang, Yunan and Li, Yunji and Xu, Yunzhi and Mao, Yuxin and
+                  Shi, Yuxuan and Wenren, Yuze and Li, Zehan and Li, Zelin and
+                  Tian, Zhanxu and Zhu, Zhengmao and Fan, Zhenhua and Wu,
+                  Zhenzhen and Xu, Zhichao and Yu, Zhihang and Lyu, Zhiheng and
+                  Jiang, Zhuo and Gao, Zibo and Wu, Zijia and Song, Zijian and
+                  Sun, Zijun},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-06-16},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {We introduce MiniMax-M1, the world's first open-weight,
+                  large-scale hybrid-attention reasoning model. MiniMax-M1 is
+                  powered by a hybrid Mixture-of-Experts (MoE) architecture
+                  combined with a lightning attention mechanism. The model is
+                  developed based on our previous MiniMax-Text-01 model, which
+                  contains a total of 456 billion parameters with 45.9 billion
+                  parameters activated per token. The M1 model natively supports
+                  a context length of 1 million tokens, 8x the context size of
+                  DeepSeek R1. Furthermore, the lightning attention mechanism in
+                  MiniMax-M1 enables efficient scaling of test-time compute.
+                  These properties make M1 particularly suitable for complex
+                  tasks that require processing long inputs and thinking
+                  extensively. MiniMax-M1 is trained using large-scale
+                  reinforcement learning (RL) on diverse problems including
+                  sandbox-based, real-world software engineering environments.
+                  In addition to M1's inherent efficiency advantage for RL
+                  training, we propose CISPO, a novel RL algorithm to further
+                  enhance RL efficiency. CISPO clips importance sampling weights
+                  rather than token updates, outperforming other competitive RL
+                  variants. Combining hybrid-attention and CISPO enables
+                  MiniMax-M1's full RL training on 512 H800 GPUs to complete in
+                  only three weeks, with a rental cost of just \$534,700. We
+                  release two versions of MiniMax-M1 models with 40K and 80K
+                  thinking budgets respectively, where the 40K model represents
+                  an intermediate phase of the 80K training. Experiments on
+                  standard benchmarks show that our models are comparable or
+                  superior to strong open-weight models such as the original
+                  DeepSeek-R1 and Qwen3-235B, with particular strengths in
+                  complex software engineering, tool utilization, and
+                  long-context tasks. We publicly release MiniMax-M1 at
+                  https://github.com/MiniMax-AI/MiniMax-M1.},
+  urldate      = {2025-11-03}
+}
+
 @ARTICLE{Agrawal-GEPA-ReflectiveLearning-2025,
   title        = {{GEPA}: Reflective prompt evolution can outperform
                   reinforcement learning},
