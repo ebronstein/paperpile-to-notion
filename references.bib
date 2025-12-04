@@ -670,6 +670,53 @@
   urldate      = {2025-12-03}
 }
 
+@ARTICLE{Cui-Entropy-MechanismModels-2025,
+  title        = {The entropy mechanism of reinforcement learning for reasoning
+                  language models},
+  author       = {Cui, Ganqu and Zhang, Yuchen and Chen, Jiacheng and Yuan,
+                  Lifan and Wang, Zhi and Zuo, Yuxin and Li, Haozhan and Fan,
+                  Yuchen and Chen, Huayu and Chen, Weize and Liu, Zhiyuan and
+                  Peng, Hao and Bai, Lei and Ouyang, Wanli and Cheng, Yu and
+                  Zhou, Bowen and Ding, Ning},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-05-28},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {This paper aims to overcome a major obstacle in scaling RL for
+                  reasoning with LLMs, namely the collapse of policy entropy.
+                  Such phenomenon is consistently observed across vast RL runs
+                  without entropy intervention, where the policy entropy dropped
+                  sharply at the early training stage, this diminished
+                  exploratory ability is always accompanied with the saturation
+                  of policy performance. In practice, we establish a
+                  transformation equation R=-a*e\textasciicircumH+b between
+                  entropy H and downstream performance R. This empirical law
+                  strongly indicates that, the policy performance is traded from
+                  policy entropy, thus bottlenecked by its exhaustion, and the
+                  ceiling is fully predictable H=0, R=-a+b. Our finding
+                  necessitates entropy management for continuous exploration
+                  toward scaling compute for RL. To this end, we investigate
+                  entropy dynamics both theoretically and empirically. Our
+                  derivation highlights that, the change in policy entropy is
+                  driven by the covariance between action probability and the
+                  change in logits, which is proportional to its advantage when
+                  using Policy Gradient-like algorithms. Empirical study shows
+                  that, the values of covariance term and entropy differences
+                  matched exactly, supporting the theoretical conclusion.
+                  Moreover, the covariance term stays mostly positive throughout
+                  training, further explaining why policy entropy would decrease
+                  monotonically. Through understanding the mechanism behind
+                  entropy dynamics, we motivate to control entropy by
+                  restricting the update of high-covariance tokens.
+                  Specifically, we propose two simple yet effective techniques,
+                  namely Clip-Cov and KL-Cov, which clip and apply KL penalty to
+                  tokens with high covariances respectively. Experiments show
+                  that these methods encourage exploration, thus helping policy
+                  escape entropy collapse and achieve better downstream
+                  performance.},
+  urldate      = {2025-12-04}
+}
+
 @ARTICLE{Agarwal-PerSim-Data-EfficientSimulators-2021,
   title        = {{PerSim}: Data-Efficient Offline Reinforcement Learning with
                   Heterogeneous Agents via Personalized Simulators},
