@@ -1,798 +1,3 @@
-@ARTICLE{Subramaniam-Multiagent-FinetuningChains-2025,
-  title        = {Multiagent finetuning: Self improvement with diverse reasoning
-                  chains},
-  author       = {Subramaniam, Vighnesh and Du, Yilun and Tenenbaum, Joshua B
-                  and Torralba, Antonio and Li, Shuang and Mordatch, Igor},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-01-09},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {Large language models (LLMs) have achieved remarkable
-                  performance in recent years but are fundamentally limited by
-                  the underlying training data. To improve models beyond the
-                  training data, recent works have explored how LLMs can be used
-                  to generate synthetic data for autonomous self-improvement.
-                  However, successive steps of self-improvement can reach a
-                  point of diminishing returns. In this work, we propose a
-                  complementary approach towards self-improvement where
-                  finetuning is applied to a multiagent society of language
-                  models. A group of language models, all starting from the same
-                  base model, are independently specialized by updating each one
-                  using data generated through multiagent interactions among the
-                  models. By training each model on independent sets of data, we
-                  illustrate how this approach enables specialization across
-                  models and diversification over the set of models. As a
-                  result, our overall system is able to preserve diverse
-                  reasoning chains and autonomously improve over many more
-                  rounds of fine-tuning than single-agent self-improvement
-                  methods. We quantitatively illustrate the efficacy of the
-                  approach across a wide suite of reasoning tasks.},
-  urldate      = {2025-10-20}
-}
-
-@ARTICLE{Park-MAPoRL-Multi-AgentLearning-2025,
-  title        = {{MAPoRL}: Multi-Agent Post-co-training for collaborative large
-                  language models with Reinforcement Learning},
-  author       = {Park, Chanwoo and Han, Seungju and Guo, Xingzhi and Ozdaglar,
-                  Asuman and Zhang, Kaiqing and Kim, Joo-Kyung},
-  journaltitle = {arXiv [cs.AI]},
-  date         = {2025-07-12},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.AI},
-  abstract     = {Leveraging multiple large language models (LLMs) to build
-                  collaborative multi-agentic workflows has demonstrated
-                  significant potential. However, most previous studies focus on
-                  prompting the out-of-the-box LLMs, relying on their innate
-                  capability for collaboration, which may not improve LLMs'
-                  performance as shown recently. In this paper, we introduce a
-                  new post-training paradigm MAPoRL (Multi-Agent
-                  Post-co-training for collaborative LLMs with Reinforcement
-                  Learning), to explicitly elicit the collaborative behaviors
-                  and further unleash the power of multi-agentic LLM frameworks.
-                  In MAPoRL, multiple LLMs first generate their own responses
-                  independently and engage in a multi-turn discussion to
-                  collaboratively improve the final answer. In the end, a MAPoRL
-                  verifier evaluates both the answer and the discussion, by
-                  assigning a score that verifies the correctness of the answer,
-                  while adding incentives to encourage corrective and persuasive
-                  discussions. The score serves as the co-training reward, and
-                  is then maximized through multi-agent RL. Unlike existing LLM
-                  post-training paradigms, MAPoRL advocates the co-training of
-                  multiple LLMs together using RL for better generalization.
-                  Accompanied by analytical insights, our experiments
-                  demonstrate that training individual LLMs alone is
-                  insufficient to induce effective collaboration. In contrast,
-                  multi-agent co-training can boost the collaboration
-                  performance across benchmarks, with generalization to unseen
-                  domains.},
-  urldate      = {2025-10-20}
-}
-
-@ARTICLE{Zhao-SiriuS-Self-improvingReasoning-2025,
-  title        = {{SiriuS}: Self-improving multi-agent systems via bootstrapped
-                  reasoning},
-  author       = {Zhao, Wanjia and Yuksekgonul, Mert and Wu, Shirley and Zou,
-                  James},
-  journaltitle = {arXiv [cs.AI]},
-  date         = {2025-02-07},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.AI},
-  abstract     = {Multi-agent AI systems powered by large language models (LLMs)
-                  are increasingly applied to solve complex tasks. However,
-                  these systems often rely on fragile, manually designed prompts
-                  and heuristics, making optimization difficult. A key challenge
-                  in optimizing multi-agent systems is acquiring suitable
-                  training data for specialized agents. We introduce SiriuS, a
-                  self-improving, reasoning-driven optimization framework for
-                  multi-agent systems. Central to our approach is the
-                  construction of an experience library: a repository of
-                  high-quality reasoning trajectories. The library is built by
-                  retaining reasoning steps that lead to successful outcomes,
-                  providing a robust training set for optimizing multi-agent
-                  system. Additionally, we introduce a library augmentation
-                  procedure that refines unsuccessful trajectories, further
-                  enriching the library. SiriuS boosts performance by 2.86\% to
-                  21.88\% on reasoning and biomedical QA and enhances agent
-                  negotiation in competitive settings. Our results show that
-                  SiriuS enhances multi-agent performance while generating
-                  reusable data for self-correction and self-play enhancement in
-                  the future.},
-  urldate      = {2025-10-20}
-}
-
-@ARTICLE{Liu-Part-IReasoning-2025,
-  title        = {Part {I}: Tricks or traps? A deep dive into {RL} for {LLM}
-                  reasoning},
-  author       = {Liu, Zihe and Liu, Jiashun and He, Yancheng and Wang, Weixun
-                  and Liu, Jiaheng and Pan, Ling and Hu, Xinyu and Xiong,
-                  Shaopan and Huang, Ju and Hu, Jian and Huang, Shengyi and
-                  Yang, Siran and Wang, Jiamang and Su, Wenbo and Zheng, Bo},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2025-08-11},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {Reinforcement learning for LLM reasoning has rapidly emerged
-                  as a prominent research area, marked by a significant surge in
-                  related studies on both algorithmic innovations and practical
-                  applications. Despite this progress, several critical
-                  challenges remain, including the absence of standardized
-                  guidelines for employing RL techniques and a fragmented
-                  understanding of their underlying mechanisms. Additionally,
-                  inconsistent experimental settings, variations in training
-                  data, and differences in model initialization have led to
-                  conflicting conclusions, obscuring the key characteristics of
-                  these techniques and creating confusion among practitioners
-                  when selecting appropriate techniques. This paper
-                  systematically reviews widely adopted RL techniques through
-                  rigorous reproductions and isolated evaluations within a
-                  unified open-source framework. We analyze the internal
-                  mechanisms, applicable scenarios, and core principles of each
-                  technique through fine-grained experiments, including datasets
-                  of varying difficulty, model sizes, and architectures. Based
-                  on these insights, we present clear guidelines for selecting
-                  RL techniques tailored to specific setups, and provide a
-                  reliable roadmap for practitioners navigating the RL for the
-                  LLM domain. Finally, we reveal that a minimalist combination
-                  of two techniques can unlock the learning capability of
-                  critic-free policies using vanilla PPO loss. The results
-                  demonstrate that our simple combination consistently improves
-                  performance, surpassing strategies like GRPO and DAPO.},
-  urldate      = {2025-10-20}
-}
-
-@ARTICLE{Schulman-Proximal-PolicyAlgorithms-2017,
-  title        = {Proximal Policy Optimization Algorithms},
-  author       = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and
-                  Radford, Alec and Klimov, Oleg},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2017-07-19},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {We propose a new family of policy gradient methods for
-                  reinforcement learning, which alternate between sampling data
-                  through interaction with the environment, and optimizing a
-                  "surrogate" objective function using stochastic gradient
-                  ascent. Whereas standard policy gradient methods perform one
-                  gradient update per data sample, we propose a novel objective
-                  function that enables multiple epochs of minibatch updates.
-                  The new methods, which we call proximal policy optimization
-                  (PPO), have some of the benefits of trust region policy
-                  optimization (TRPO), but they are much simpler to implement,
-                  more general, and have better sample complexity (empirically).
-                  Our experiments test PPO on a collection of benchmark tasks,
-                  including simulated robotic locomotion and Atari game playing,
-                  and we show that PPO outperforms other online policy gradient
-                  methods, and overall strikes a favorable balance between
-                  sample complexity, simplicity, and wall-time.},
-  urldate      = {2025-10-24}
-}
-
-@ONLINE{Schulman-LoRA-Regret-2025,
-  title     = {{LoRA} Without Regret},
-  author    = {Schulman, John},
-  booktitle = {Thinking Machines Lab},
-  date      = {2025-09-29},
-  abstract  = {How LoRA matches full training performance more broadly than
-               expected.},
-  urldate   = {2025-10-30}
-}
-
-@INPROCEEDINGS{Silver-Deterministic-PolicyAlgorithms-2014,
-  title      = {Deterministic Policy Gradient Algorithms},
-  author     = {Silver, David and Lever, Guy and Heess, Nicolas and Degris,
-                Thomas and Wierstra, Daan and Riedmiller, Martin},
-  booktitle  = {International Conference on Machine Learning},
-  publisher  = {PMLR},
-  eventtitle = {International Conference on Machine Learning},
-  pages      = {387--395},
-  date       = {2014-01-27},
-  abstract   = {In this paper we consider deterministic policy gradient
-                algorithms for reinforcement learning with continuous actions.
-                The deterministic policy gradient has a particularly appealing
-                form: it is the...},
-  urldate    = {2025-11-14},
-  language   = {en}
-}
-
-@ONLINE{Richard-S-Sutton-David-A-McAllester-Satinder-P-Singh-Yishay-Mansour-Policy-GradientApproximation-1999,
-  title   = {Policy Gradient Methods for Reinforcement Learning with Function
-             Approximation},
-  author  = {{Richard S. Sutton, David A. McAllester, Satinder P. Singh, Yishay
-             Mansour}},
-  date    = {1999},
-  urldate = {2025-11-14}
-}
-
-@ONLINE{Jiacai-Liu-Yingru-Li-Yuqian-Fu-Jiawei-Wang-Qian-Liu-Yu-Shen-When-SpeedMismatch-Other,
-  title     = {When Speed Kills Stability: Demystifying {RL} Collapse from the
-               Training-Inference Mismatch},
-  author    = {{Jiacai Liu, Yingru Li, Yuqian Fu, Jiawei Wang, Qian Liu, Yu
-               Shen}},
-  booktitle = {yingru on Notion},
-  abstract  = {A tool that connects everyday work into one space. It gives you
-               and your teams AI tools—search, writing, note-taking—inside an
-               all-in-one, flexible workspace.},
-  urldate   = {2025-11-02},
-  language  = {en}
-}
-
-@ARTICLE{MiniMax-MiniMax-M1-ScalingAttention-2025,
-  title        = {{MiniMax}-{M1}: Scaling test-time compute efficiently with
-                  lightning attention},
-  author       = {{MiniMax} and Chen, Aili and Li, Aonian and Gong, Bangwei and
-                  Jiang, Binyang and Fei, Bo and Yang, Bo and Shan, Boji and Yu,
-                  Changqing and Wang, Chao and Zhu, Cheng and Xiao, Chengjun and
-                  Du, Chengyu and Zhang, Chi and Qiao, Chu and Zhang, Chunhao
-                  and Du, Chunhui and Guo, Congchao and Chen, Da and Ding,
-                  Deming and Sun, Dianjun and Li, Dong and Jiao, Enwei and Zhou,
-                  Haigang and Zhang, Haimo and Ding, Han and Sun, Haohai and
-                  Feng, Haoyu and Cai, Huaiguang and Zhu, Haichao and Sun, Jian
-                  and Zhuang, Jiaqi and Cai, Jiaren and Song, Jiayuan and Zhu,
-                  Jin and Li, Jingyang and Tian, Jinhao and Liu, Jinli and Xu,
-                  Junhao and Yan, Junjie and Liu, Junteng and He, Junxian and
-                  Feng, Kaiyi and Yang, Ke and Xiao, Kecheng and Han, Le and
-                  Wang, Leyang and Yu, Lianfei and Feng, Liheng and Li, Lin and
-                  Zheng, Lin and Du, Linge and Yang, Lingyu and Zeng, Lunbin and
-                  Yu, Minghui and Tao, Mingliang and Chi, Mingyuan and Zhang,
-                  Mozhi and Lin, Mujie and Hu, Nan and Di, Nongyu and Gao, Peng
-                  and Li, Pengfei and Zhao, Pengyu and Ren, Qibing and Xu, Qidi
-                  and Li, Qile and Wang, Qin and Tian, Rong and Leng, Ruitao and
-                  Chen, Shaoxiang and Chen, Shaoyu and Shi, Shengmin and Weng,
-                  Shitong and Guan, Shuchang and Yu, Shuqi and Li, Sichen and
-                  Zhu, Songquan and Li, Tengfei and Cai, Tianchi and Liang,
-                  Tianrun and Cheng, Weiyu and Kong, Weize and Li, Wenkai and
-                  Chen, Xiancai and Song, Xiangjun and Luo, Xiao and Su, Xiao
-                  and Li, Xiaobo and Han, Xiaodong and Hou, Xinzhu and Lu, Xuan
-                  and Zou, Xun and Shen, Xuyang and Gong, Yan and Ma, Yan and
-                  Wang, Yang and Shi, Yiqi and Zhong, Yiran and Duan, Yonghong
-                  and Fu, Yongxiang and Hu, Yongyi and Gao, Yu and Fan,
-                  Yuanxiang and Yang, Yufeng and Li, Yuhao and Hu, Yulin and
-                  Huang, Yunan and Li, Yunji and Xu, Yunzhi and Mao, Yuxin and
-                  Shi, Yuxuan and Wenren, Yuze and Li, Zehan and Li, Zelin and
-                  Tian, Zhanxu and Zhu, Zhengmao and Fan, Zhenhua and Wu,
-                  Zhenzhen and Xu, Zhichao and Yu, Zhihang and Lyu, Zhiheng and
-                  Jiang, Zhuo and Gao, Zibo and Wu, Zijia and Song, Zijian and
-                  Sun, Zijun},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-06-16},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {We introduce MiniMax-M1, the world's first open-weight,
-                  large-scale hybrid-attention reasoning model. MiniMax-M1 is
-                  powered by a hybrid Mixture-of-Experts (MoE) architecture
-                  combined with a lightning attention mechanism. The model is
-                  developed based on our previous MiniMax-Text-01 model, which
-                  contains a total of 456 billion parameters with 45.9 billion
-                  parameters activated per token. The M1 model natively supports
-                  a context length of 1 million tokens, 8x the context size of
-                  DeepSeek R1. Furthermore, the lightning attention mechanism in
-                  MiniMax-M1 enables efficient scaling of test-time compute.
-                  These properties make M1 particularly suitable for complex
-                  tasks that require processing long inputs and thinking
-                  extensively. MiniMax-M1 is trained using large-scale
-                  reinforcement learning (RL) on diverse problems including
-                  sandbox-based, real-world software engineering environments.
-                  In addition to M1's inherent efficiency advantage for RL
-                  training, we propose CISPO, a novel RL algorithm to further
-                  enhance RL efficiency. CISPO clips importance sampling weights
-                  rather than token updates, outperforming other competitive RL
-                  variants. Combining hybrid-attention and CISPO enables
-                  MiniMax-M1's full RL training on 512 H800 GPUs to complete in
-                  only three weeks, with a rental cost of just \$534,700. We
-                  release two versions of MiniMax-M1 models with 40K and 80K
-                  thinking budgets respectively, where the 40K model represents
-                  an intermediate phase of the 80K training. Experiments on
-                  standard benchmarks show that our models are comparable or
-                  superior to strong open-weight models such as the original
-                  DeepSeek-R1 and Qwen3-235B, with particular strengths in
-                  complex software engineering, tool utilization, and
-                  long-context tasks. We publicly release MiniMax-M1 at
-                  https://github.com/MiniMax-AI/MiniMax-M1.},
-  urldate      = {2025-11-03}
-}
-
-@ARTICLE{Mistral-AI-Magistral-2025,
-  title        = {Magistral},
-  author       = {{Mistral-AI} and Rastogi, Abhinav and Jiang, Albert Q and Lo,
-                  Andy and Berrada, Gabrielle and Lample, Guillaume and Rute,
-                  Jason and Barmentlo, Joep and Yadav, Karmesh and Khandelwal,
-                  Kartik and Chandu, Khyathi Raghavi and Blier, Léonard and
-                  Saulnier, Lucile and Dinot, Matthieu and Darrin, Maxime and
-                  Gupta, Neha and Soletskyi, Roman and Vaze, Sagar and Scao,
-                  Teven Le and Wang, Yihan and Yang, Adam and Liu, Alexander H
-                  and Sablayrolles, Alexandre and Héliou, Amélie and Martin,
-                  Amélie and Ehrenberg, Andy and Agarwal, Anmol and Roux,
-                  Antoine and Darcet, Arthur and Mensch, Arthur and Bout,
-                  Baptiste and Rozière, Baptiste and De Monicault, Baudouin and
-                  Bamford, Chris and Wallenwein, Christian and Renaudin,
-                  Christophe and Lanfranchi, Clémence and Dabert, Darius and
-                  Mizelle, Devon and Casas, Diego de las and Chane-Sane, Elliot
-                  and Fugier, Emilien and Hanna, Emma Bou and Delerce, Gauthier
-                  and Guinet, Gauthier and Novikov, Georgii and Martin,
-                  Guillaume and Jaju, Himanshu and Ludziejewski, Jan and
-                  Chabran, Jean-Hadrien and Delignon, Jean-Malo and Studnia,
-                  Joachim and Amar, Jonas and Roberts, Josselin Somerville and
-                  Denize, Julien and Saxena, Karan and Jain, Kush and Zhao,
-                  Lingxiao and Martin, Louis and Gao, Luyu and Lavaud, Lélio
-                  Renard and Pellat, Marie and Guillaumin, Mathilde and
-                  Felardos, Mathis and Augustin, Maximilian and Seznec, Mickaël
-                  and Raghuraman, Nikhil and Duchenne, Olivier and Wang,
-                  Patricia and von Platen, Patrick and Saffer, Patryk and Jacob,
-                  Paul and Wambergue, Paul and Kurylowicz, Paula and Muddireddy,
-                  Pavankumar Reddy and Chagniot, Philomène and Stock, Pierre and
-                  Agrawal, Pravesh and Sauvestre, Romain and Delacourt, Rémi and
-                  Gandhi, Sanchit and Subramanian, Sandeep and Dalal, Shashwat
-                  and Gandhi, Siddharth and Ghosh, Soham and Mishra, Srijan and
-                  Aithal, Sumukh and Antoniak, Szymon and Schueller, Thibault
-                  and Lavril, Thibaut and Robert, Thomas and Wang, Thomas and
-                  Lacroix, Timothée and Nemychnikova, Valeriia and Paltz, Victor
-                  and Richard, Virgile and Li, Wen-Ding and Marshall, William
-                  and Zhang, Xuanyu and Tang, Yunhao},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-06-12},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {We introduce Magistral, Mistral's first reasoning model and
-                  our own scalable reinforcement learning (RL) pipeline. Instead
-                  of relying on existing implementations and RL traces distilled
-                  from prior models, we follow a ground up approach, relying
-                  solely on our own models and infrastructure. Notably, we
-                  demonstrate a stack that enabled us to explore the limits of
-                  pure RL training of LLMs, present a simple method to force the
-                  reasoning language of the model, and show that RL on text data
-                  alone maintains most of the initial checkpoint's capabilities.
-                  We find that RL on text maintains or improves multimodal
-                  understanding, instruction following and function calling. We
-                  present Magistral Medium, trained for reasoning on top of
-                  Mistral Medium 3 with RL alone, and we open-source Magistral
-                  Small (Apache 2.0) which further includes cold-start data from
-                  Magistral Medium.},
-  urldate      = {2025-11-03}
-}
-
-@ONLINE{Gao-Efficient-RLTraining-Other,
-  title     = {Your Efficient {RL} Framework Secretly Brings You Off-Policy {RL}
-               Training},
-  author    = {Gao, Jianfeng},
-  booktitle = {fengyao on Notion},
-  abstract  = {Feng Yao* Liyuan Liu* Dinghuai Zhang Chengyu Dong Jingbo Shang
-               Jianfeng Gao},
-  urldate   = {2025-11-06},
-  language  = {en}
-}
-
-@ARTICLE{Liu-Understanding-R1-zero-likePerspective-2025,
-  title        = {Understanding {R1}-zero-like training: A critical perspective},
-  author       = {Liu, Zichen and Chen, Changyu and Li, Wenjun and Qi, Penghui
-                  and Pang, Tianyu and Du, Chao and Lee, Wee Sun and Lin, Min},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2025-10-06},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {DeepSeek-R1-Zero has shown that reinforcement learning (RL) at
-                  scale can directly enhance the reasoning capabilities of LLMs
-                  without supervised fine-tuning. In this work, we critically
-                  examine R1-Zero-like training by analyzing its two core
-                  components: base models and RL. We investigate a wide range of
-                  base models, including DeepSeek-V3-Base, to understand how
-                  pretraining characteristics influence RL performance. Our
-                  analysis reveals that DeepSeek-V3-Base already exhibit ''Aha
-                  moment'', while Qwen2.5 base models demonstrate strong
-                  reasoning capabilities even without prompt templates,
-                  suggesting potential pretraining biases. Additionally, we
-                  identify an optimization bias in Group Relative Policy
-                  Optimization (GRPO), which artificially increases response
-                  length (especially for incorrect outputs) during training. To
-                  address this, we introduce Dr. GRPO, an unbiased optimization
-                  method that improves token efficiency while maintaining
-                  reasoning performance. Leveraging these insights, we present a
-                  minimalist R1-Zero recipe that achieves 43.3\% accuracy on
-                  AIME 2024 with a 7B base model, establishing a new
-                  state-of-the-art. Our code is available at
-                  https://github.com/sail-sg/understand-r1-zero.},
-  urldate      = {2025-11-06}
-}
-
-@ARTICLE{Zheng-Group-SequenceOptimization-2025,
-  title        = {Group Sequence Policy Optimization},
-  author       = {Zheng, Chujie and Liu, Shixuan and Li, Mingze and Chen,
-                  Xiong-Hui and Yu, Bowen and Gao, Chang and Dang, Kai and Liu,
-                  Yuqiong and Men, Rui and Yang, An and Zhou, Jingren and Lin,
-                  Junyang},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2025-07-28},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {This paper introduces Group Sequence Policy Optimization
-                  (GSPO), our stable, efficient, and performant reinforcement
-                  learning algorithm for training large language models. Unlike
-                  previous algorithms that adopt token-level importance ratios,
-                  GSPO defines the importance ratio based on sequence likelihood
-                  and performs sequence-level clipping, rewarding, and
-                  optimization. We demonstrate that GSPO achieves superior
-                  training efficiency and performance compared to the GRPO
-                  algorithm, notably stabilizes Mixture-of-Experts (MoE) RL
-                  training, and has the potential for simplifying the design of
-                  RL infrastructure. These merits of GSPO have contributed to
-                  the remarkable improvements in the latest Qwen3 models.},
-  urldate      = {2025-11-06}
-}
-
-@ARTICLE{Abdulhai-Consistently-SimulatingLearning-2025,
-  title        = {Consistently simulating human personas with multi-turn
-                  reinforcement learning},
-  author       = {Abdulhai, Marwa and Cheng, Ryan and Clay, Donovan and Althoff,
-                  Tim and Levine, Sergey and Jaques, Natasha},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-10-31},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {Large Language Models (LLMs) are increasingly used to simulate
-                  human users in interactive settings such as therapy,
-                  education, and social role-play. While these simulations
-                  enable scalable training and evaluation of AI agents,
-                  off-the-shelf LLMs often drift from their assigned personas,
-                  contradict earlier statements, or abandon role-appropriate
-                  behavior. We introduce a unified framework for evaluating and
-                  improving persona consistency in LLM-generated dialogue. We
-                  define three automatic metrics: prompt-to-line consistency,
-                  line-to-line consistency, and Q\&A consistency, that capture
-                  different types of persona drift and validate each against
-                  human annotations. Using these metrics as reward signals, we
-                  apply multi-turn reinforcement learning to fine-tune LLMs for
-                  three user roles: a patient, a student, and a social chat
-                  partner. Our method reduces inconsistency by over 55\%,
-                  resulting in more coherent and faithful simulated users.},
-  urldate      = {2025-11-06}
-}
-
-@ARTICLE{Shen-Completion-neq-Agents-2025,
-  title        = {Completion $\neq$ collaboration: Scaling collaborative effort
-                  with agents},
-  author       = {Shen, Shannon Zejiang and Chen, Valerie and Gu, Ken and Ross,
-                  Alexis and Ma, Zixian and Ross, Jillian and Gu, Alex and Si,
-                  Chenglei and Chi, Wayne and Peng, Andi and Shen, Jocelyn J and
-                  Talwalkar, Ameet and Wu, Tongshuang and Sontag, David},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-10-30},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {Current evaluations of agents remain centered around one-shot
-                  task completion, failing to account for the inherently
-                  iterative and collaborative nature of many real-world
-                  problems, where human goals are often underspecified and
-                  evolve. We argue for a shift from building and assessing task
-                  completion agents to developing collaborative agents, assessed
-                  not only by the quality of their final outputs but by how well
-                  they engage with and enhance human effort throughout the
-                  problem-solving process. To support this shift, we introduce
-                  collaborative effort scaling, a framework that captures how an
-                  agent's utility grows with increasing user involvement.
-                  Through case studies and simulated evaluations, we show that
-                  state-of-the-art agents often underperform in multi-turn,
-                  real-world scenarios, revealing a missing ingredient in agent
-                  design: the ability to sustain engagement and scaffold user
-                  understanding. Collaborative effort scaling offers a lens for
-                  diagnosing agent behavior and guiding development toward more
-                  effective interactions.},
-  urldate      = {2025-11-06}
-}
-
-@ARTICLE{Ilyas-Closer-LookGradients-2018,
-  title        = {A closer look at deep policy gradients},
-  author       = {Ilyas, Andrew and Engstrom, Logan and Santurkar, Shibani and
-                  Tsipras, Dimitris and Janoos, Firdaus and Rudolph, Larry and
-                  Madry, Aleksander},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2018-11-06},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {We study how the behavior of deep policy gradient algorithms
-                  reflects the conceptual framework motivating their
-                  development. To this end, we propose a fine-grained analysis
-                  of state-of-the-art methods based on key elements of this
-                  framework: gradient estimation, value prediction, and
-                  optimization landscapes. Our results show that the behavior of
-                  deep policy gradient algorithms often deviates from what their
-                  motivating framework would predict: the surrogate objective
-                  does not match the true reward landscape, learned value
-                  estimators fail to fit the true value function, and gradient
-                  estimates poorly correlate with the "true" gradient. The
-                  mismatch between predicted and empirical behavior we uncover
-                  highlights our poor understanding of current methods, and
-                  indicates the need to move beyond current benchmark-centric
-                  evaluation methods.},
-  urldate      = {2025-11-06}
-}
-
-@INBOOK{Singh-Learning-State-estimationProcesses-1994,
-  title     = {Learning without state-estimation in partially observable
-               markovian decision processes},
-  author    = {Singh, Satinder P and Jaakkola, Tommi and Jordan, Michael I},
-  booktitle = {Machine Learning Proceedings 1994},
-  publisher = {Elsevier},
-  pages     = {284--292},
-  date      = {1994-01-01},
-  abstract  = {Reinforcement learning (RL) algorithms provide a sound
-               theoretical basis for building learning control architectures for
-               embedded agents. Unfortunatel…},
-  urldate   = {2025-11-06}
-}
-
-@ARTICLE{Wu-DeepSearch-OvercomeSearch-2025,
-  title        = {{DeepSearch}: Overcome the bottleneck of reinforcement
-                  learning with verifiable rewards via Monte Carlo Tree Search},
-  author       = {Wu, Fang and Xuan, Weihao and Qi, Heli and Lu, Ximing and Tu,
-                  Aaron and Li, Li Erran and Choi, Yejin},
-  journaltitle = {arXiv [cs.AI]},
-  date         = {2025-10-01},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.AI},
-  abstract     = {Although RLVR has become an essential component for developing
-                  advanced reasoning skills in LLMs, contemporary studies have
-                  documented training plateaus that emerge following thousands
-                  of optimization steps, demonstrating notable decreases in
-                  performance gains despite increased computational investment.
-                  This limitation stems from the sparse exploration patterns
-                  inherent in current RLVR practices, where models rely on
-                  limited rollouts that often miss critical reasoning paths and
-                  fail to provide systematic coverage of the solution space. We
-                  present DeepSearch, a framework that integrates Monte Carlo
-                  Tree Search directly into RLVR training. In contrast to
-                  existing methods that rely on tree search only at inference,
-                  DeepSearch embeds structured search into the training loop,
-                  enabling systematic exploration and fine-grained credit
-                  assignment across reasoning steps. Through training-time
-                  exploration, DeepSearch addresses the fundamental bottleneck
-                  of insufficient exploration, which leads to diminishing
-                  performance improvements over prolonged training steps. Our
-                  contributions include: (1) a global frontier selection
-                  strategy that prioritizes promising nodes across the search
-                  tree, (2) selection with entropy-based guidance that
-                  identifies confident paths for supervision, and (3) adaptive
-                  replay buffer training with solution caching for efficiency.
-                  Experiments on mathematical reasoning benchmarks show that
-                  DeepSearch achieves 62.95\% average accuracy and establishes a
-                  new state-of-the-art for 1.5B reasoning models - using 5.7x
-                  fewer GPU hours than extended training approaches. These
-                  results highlight the importance of strategic exploration over
-                  brute-force scaling and demonstrate the promise of algorithmic
-                  innovation for advancing RLVR methodologies. DeepSearch
-                  establishes a new direction for scaling reasoning capabilities
-                  through systematic search rather than prolonged computation.},
-  urldate      = {2025-11-06}
-}
-
-@ARTICLE{Yue-Reinforcement-Learning-2025,
-  title        = {Does reinforcement Learning really incentivize reasoning
-                  capacity in {LLMs} beyond the base model?},
-  author       = {Yue, Yang and Chen, Zhiqi and Lu, Rui and Zhao, Andrew and
-                  Wang, Zhaokai and Yue, Yang and Song, Shiji and Huang, Gao},
-  journaltitle = {arXiv [cs.AI]},
-  date         = {2025-10-23},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.AI},
-  abstract     = {Reinforcement Learning with Verifiable Rewards (RLVR) has
-                  recently demonstrated notable success in enhancing the
-                  reasoning performance of large language models (LLMs),
-                  particularly on mathematics and programming tasks. Similar to
-                  how traditional RL helps agents explore and learn new
-                  strategies, RLVR is believed to enable LLMs to continuously
-                  self-improve, thus acquiring novel reasoning abilities beyond
-                  those of the corresponding base models. In this study we
-                  critically examine the current state of RLVR by systematically
-                  probing the reasoning capability boundaries of RLVR-trained
-                  LLMs across various model families, RL algorithms, and math,
-                  coding, and visual reasoning benchmarks, using pass@k at large
-                  k values as the evaluation metric. Surprisingly, we find that
-                  the current training setup does not elicit fundamentally new
-                  reasoning patterns. While RLVR-trained models outperform their
-                  base models at small k (e.g., k = 1), the base models achieve
-                  a higher pass@k score when k is large. Coverage and perplexity
-                  analyses show that the observed reasoning abilities originate
-                  from and are bounded by the base model. Treating the base
-                  model as an upper bound, our quantitative analysis shows that
-                  six popular RLVR algorithms perform similarly and remain far
-                  from optimal in leveraging the potential of the base model. By
-                  contrast, we find that distillation can introduce new
-                  reasoning patterns from the teacher and genuinely expand the
-                  model's reasoning capabilities. Overall, our findings suggest
-                  that current RLVR methods have not yet realized the potential
-                  of RL to elicit truly novel reasoning abilities in LLMs. This
-                  highlights the need for improved RL paradigms, such as
-                  continual scaling and multi-turn agent-environment
-                  interaction, to unlock this potential.},
-  urldate      = {2025-11-12}
-}
-
-@ARTICLE{Liao-Efficacy-LanguageGames-2024,
-  title        = {Efficacy of language model self-play in non-zero-sum games},
-  author       = {Liao, Austen and Tomlin, Nicholas and Klein, Dan},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2024-06-26},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {Game-playing agents like AlphaGo have achieved superhuman
-                  performance through self-play, which is theoretically
-                  guaranteed to yield optimal policies in competitive games.
-                  However, most language tasks are partially or fully
-                  cooperative, so it is an open question whether techniques like
-                  self-play can effectively be used to improve language models.
-                  We empirically investigate this question in a negotiation game
-                  setting known as Deal or No Deal (DoND). Crucially, the
-                  objective in DoND can be modified to produce a fully
-                  cooperative game, a strictly competitive one, or anything in
-                  between. We finetune language models in self-play over
-                  multiple rounds of filtered behavior cloning in DoND for each
-                  of these objectives and evaluate them in self-play and in
-                  collaboration with humans. We find that language models
-                  improve substantially in self-play, achieving 14-17x higher
-                  scores in task reward after finetuning. Further, the trained
-                  models generalize to both cooperation and competition with
-                  humans, scoring 2.5-6x higher than base models. We view these
-                  results as an early promising sign for language model
-                  self-play in cooperative settings, despite a lack of
-                  theoretical guarantees.},
-  urldate      = {2025-12-03}
-}
-
-@ARTICLE{Jin-Revisiting-EntropyModels-2025,
-  title        = {Revisiting entropy in reinforcement learning for large
-                  reasoning models},
-  author       = {Jin, Renren and Gao, Pengzhi and Ren, Yuqi and Han, Zhuowen
-                  and Zhang, Tongxuan and Huang, Wuwei and Liu, Wei and Luan,
-                  Jian and Xiong, Deyi},
-  journaltitle = {arXiv [cs.CL]},
-  date         = {2025-11-08},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.CL},
-  abstract     = {Reinforcement learning with verifiable rewards (RLVR) has
-                  emerged as a predominant approach for enhancing the reasoning
-                  capabilities of large language models (LLMs). However, the
-                  entropy of LLMs usually collapses during RLVR training,
-                  causing premature convergence to suboptimal local minima and
-                  hinder further performance improvement. Although various
-                  approaches have been proposed to mitigate entropy collapse, a
-                  comprehensive study of entropy in RLVR remains lacking. To
-                  address this gap, we conduct extensive experiments to
-                  investigate the entropy dynamics of LLMs trained with RLVR and
-                  analyze how model entropy correlates with response diversity,
-                  calibration, and performance across various benchmarks. Our
-                  findings reveal that the number of off-policy updates, the
-                  diversity of training data, and the clipping thresholds in the
-                  optimization objective are critical factors influencing the
-                  entropy of LLMs trained with RLVR. Moreover, we theoretically
-                  and empirically demonstrate that tokens with positive
-                  advantages are the primary contributors to entropy collapse,
-                  and that model entropy can be effectively regulated by
-                  adjusting the relative loss weights of tokens with positive
-                  and negative advantages during training.},
-  urldate      = {2025-12-03}
-}
-
-@ARTICLE{Cui-Entropy-MechanismModels-2025,
-  title        = {The entropy mechanism of reinforcement learning for reasoning
-                  language models},
-  author       = {Cui, Ganqu and Zhang, Yuchen and Chen, Jiacheng and Yuan,
-                  Lifan and Wang, Zhi and Zuo, Yuxin and Li, Haozhan and Fan,
-                  Yuchen and Chen, Huayu and Chen, Weize and Liu, Zhiyuan and
-                  Peng, Hao and Bai, Lei and Ouyang, Wanli and Cheng, Yu and
-                  Zhou, Bowen and Ding, Ning},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2025-05-28},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {This paper aims to overcome a major obstacle in scaling RL for
-                  reasoning with LLMs, namely the collapse of policy entropy.
-                  Such phenomenon is consistently observed across vast RL runs
-                  without entropy intervention, where the policy entropy dropped
-                  sharply at the early training stage, this diminished
-                  exploratory ability is always accompanied with the saturation
-                  of policy performance. In practice, we establish a
-                  transformation equation R=-a*e\textasciicircumH+b between
-                  entropy H and downstream performance R. This empirical law
-                  strongly indicates that, the policy performance is traded from
-                  policy entropy, thus bottlenecked by its exhaustion, and the
-                  ceiling is fully predictable H=0, R=-a+b. Our finding
-                  necessitates entropy management for continuous exploration
-                  toward scaling compute for RL. To this end, we investigate
-                  entropy dynamics both theoretically and empirically. Our
-                  derivation highlights that, the change in policy entropy is
-                  driven by the covariance between action probability and the
-                  change in logits, which is proportional to its advantage when
-                  using Policy Gradient-like algorithms. Empirical study shows
-                  that, the values of covariance term and entropy differences
-                  matched exactly, supporting the theoretical conclusion.
-                  Moreover, the covariance term stays mostly positive throughout
-                  training, further explaining why policy entropy would decrease
-                  monotonically. Through understanding the mechanism behind
-                  entropy dynamics, we motivate to control entropy by
-                  restricting the update of high-covariance tokens.
-                  Specifically, we propose two simple yet effective techniques,
-                  namely Clip-Cov and KL-Cov, which clip and apply KL penalty to
-                  tokens with high covariances respectively. Experiments show
-                  that these methods encourage exploration, thus helping policy
-                  escape entropy collapse and achieve better downstream
-                  performance.},
-  urldate      = {2025-12-04}
-}
-
-@ARTICLE{Chen-Beyond-High-entropyLLMs-2025,
-  title        = {Beyond high-entropy exploration: Correctness-aware low-entropy
-                  segment-based advantage shaping for reasoning {LLMs}},
-  author       = {Chen, Xinzhu and Li, Xuesheng and Sun, Zhongxiang and Yu,
-                  Weijie},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2025-11-30},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {Reinforcement Learning with Verifiable Rewards (RLVR) has
-                  become a central approach for improving the reasoning ability
-                  of large language models. Recent work studies RLVR through
-                  token entropy, arguing that high-entropy tokens drive
-                  exploration and should receive stronger updates. However, they
-                  overlook the fact that most of a reasoning trajectory consists
-                  of low-entropy segments that encode stable and reusable
-                  structural patterns. Through qualitative and quantitative
-                  analyses, we find that the overlap of low-entropy segments
-                  across correct responses strongly correlates with model
-                  accuracy, while overlaps involving incorrect responses exhibit
-                  stable but unproductive patterns. Motivated by these findings,
-                  we propose LESS, a correctness-aware reinforcement framework
-                  that performs fine-grained advantage modulation over
-                  low-entropy segments. LESS amplifies segments unique to
-                  correct responses, suppresses those unique to incorrect ones,
-                  and neutralizes segments shared by both, while preserving
-                  high-entropy exploration in the underlying RL algorithm.
-                  Instantiated on top of the popular GRPO, LESS consistently
-                  improves accuracy over strong RL baselines across three
-                  backbones and six math benchmarks, achieves stronger
-                  robustness of the performance floor.},
-  urldate      = {2025-12-08}
-}
-
-@ARTICLE{Bellemare-Distributional-PerspectiveLearning-2017,
-  title        = {A distributional perspective on reinforcement learning},
-  author       = {Bellemare, Marc G and Dabney, Will and Munos, Rémi},
-  journaltitle = {arXiv [cs.LG]},
-  date         = {2017-07-21},
-  eprinttype   = {arXiv},
-  eprintclass  = {cs.LG},
-  abstract     = {In this paper we argue for the fundamental importance of the
-                  value distribution: the distribution of the random return
-                  received by a reinforcement learning agent. This is in
-                  contrast to the common approach to reinforcement learning
-                  which models the expectation of this return, or value.
-                  Although there is an established body of literature studying
-                  the value distribution, thus far it has always been used for a
-                  specific purpose such as implementing risk-aware behaviour. We
-                  begin with theoretical results in both the policy evaluation
-                  and control settings, exposing a significant distributional
-                  instability in the latter. We then use the distributional
-                  perspective to design a new algorithm which applies Bellman's
-                  equation to the learning of approximate value distributions.
-                  We evaluate our algorithm using the suite of games from the
-                  Arcade Learning Environment. We obtain both state-of-the-art
-                  results and anecdotal evidence demonstrating the importance of
-                  the value distribution in approximate reinforcement learning.
-                  Finally, we combine theoretical and empirical evidence to
-                  highlight the ways in which the value distribution impacts
-                  learning in the approximate setting.},
-  urldate      = {2025-12-12}
-}
-
-@ARTICLE{Agarwal-PerSim-Data-EfficientSimulators-2021,
-  title        = {{PerSim}: Data-Efficient Offline Reinforcement Learning with
-                  Heterogeneous Agents via Personalized Simulators},
-  author       = {Agarwal, Anish and Alomar, Abdullah and Alumootil, Varkey and
-                  Shah, Devavrat and Shen, Dennis and Xu, Zhi and Yang, Cindy},
-  journaltitle = {Advances in Neural Information Processing Systems},
-  volume       = {34},
-  pages        = {18564--18576},
-  date         = {2021-12-06},
-  urldate      = {2024-11-01}
-}
-
 @ARTICLE{Jiang-MInference-1Attention-2024,
   title        = {{MInference} 1.0: Accelerating pre-filling for long-context
                   {LLMs} via dynamic sparse attention},
@@ -2381,6 +1586,108 @@
   urldate      = {2024-11-23}
 }
 
+@ARTICLE{Subramaniam-Multiagent-FinetuningChains-2025,
+  title        = {Multiagent finetuning: Self improvement with diverse reasoning
+                  chains},
+  author       = {Subramaniam, Vighnesh and Du, Yilun and Tenenbaum, Joshua B
+                  and Torralba, Antonio and Li, Shuang and Mordatch, Igor},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-01-09},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {Large language models (LLMs) have achieved remarkable
+                  performance in recent years but are fundamentally limited by
+                  the underlying training data. To improve models beyond the
+                  training data, recent works have explored how LLMs can be used
+                  to generate synthetic data for autonomous self-improvement.
+                  However, successive steps of self-improvement can reach a
+                  point of diminishing returns. In this work, we propose a
+                  complementary approach towards self-improvement where
+                  finetuning is applied to a multiagent society of language
+                  models. A group of language models, all starting from the same
+                  base model, are independently specialized by updating each one
+                  using data generated through multiagent interactions among the
+                  models. By training each model on independent sets of data, we
+                  illustrate how this approach enables specialization across
+                  models and diversification over the set of models. As a
+                  result, our overall system is able to preserve diverse
+                  reasoning chains and autonomously improve over many more
+                  rounds of fine-tuning than single-agent self-improvement
+                  methods. We quantitatively illustrate the efficacy of the
+                  approach across a wide suite of reasoning tasks.},
+  urldate      = {2025-10-20}
+}
+
+@ARTICLE{Park-MAPoRL-Multi-AgentLearning-2025,
+  title        = {{MAPoRL}: Multi-Agent Post-co-training for collaborative large
+                  language models with Reinforcement Learning},
+  author       = {Park, Chanwoo and Han, Seungju and Guo, Xingzhi and Ozdaglar,
+                  Asuman and Zhang, Kaiqing and Kim, Joo-Kyung},
+  journaltitle = {arXiv [cs.AI]},
+  date         = {2025-07-12},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.AI},
+  abstract     = {Leveraging multiple large language models (LLMs) to build
+                  collaborative multi-agentic workflows has demonstrated
+                  significant potential. However, most previous studies focus on
+                  prompting the out-of-the-box LLMs, relying on their innate
+                  capability for collaboration, which may not improve LLMs'
+                  performance as shown recently. In this paper, we introduce a
+                  new post-training paradigm MAPoRL (Multi-Agent
+                  Post-co-training for collaborative LLMs with Reinforcement
+                  Learning), to explicitly elicit the collaborative behaviors
+                  and further unleash the power of multi-agentic LLM frameworks.
+                  In MAPoRL, multiple LLMs first generate their own responses
+                  independently and engage in a multi-turn discussion to
+                  collaboratively improve the final answer. In the end, a MAPoRL
+                  verifier evaluates both the answer and the discussion, by
+                  assigning a score that verifies the correctness of the answer,
+                  while adding incentives to encourage corrective and persuasive
+                  discussions. The score serves as the co-training reward, and
+                  is then maximized through multi-agent RL. Unlike existing LLM
+                  post-training paradigms, MAPoRL advocates the co-training of
+                  multiple LLMs together using RL for better generalization.
+                  Accompanied by analytical insights, our experiments
+                  demonstrate that training individual LLMs alone is
+                  insufficient to induce effective collaboration. In contrast,
+                  multi-agent co-training can boost the collaboration
+                  performance across benchmarks, with generalization to unseen
+                  domains.},
+  urldate      = {2025-10-20}
+}
+
+@ARTICLE{Zhao-SiriuS-Self-improvingReasoning-2025,
+  title        = {{SiriuS}: Self-improving multi-agent systems via bootstrapped
+                  reasoning},
+  author       = {Zhao, Wanjia and Yuksekgonul, Mert and Wu, Shirley and Zou,
+                  James},
+  journaltitle = {arXiv [cs.AI]},
+  date         = {2025-02-07},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.AI},
+  abstract     = {Multi-agent AI systems powered by large language models (LLMs)
+                  are increasingly applied to solve complex tasks. However,
+                  these systems often rely on fragile, manually designed prompts
+                  and heuristics, making optimization difficult. A key challenge
+                  in optimizing multi-agent systems is acquiring suitable
+                  training data for specialized agents. We introduce SiriuS, a
+                  self-improving, reasoning-driven optimization framework for
+                  multi-agent systems. Central to our approach is the
+                  construction of an experience library: a repository of
+                  high-quality reasoning trajectories. The library is built by
+                  retaining reasoning steps that lead to successful outcomes,
+                  providing a robust training set for optimizing multi-agent
+                  system. Additionally, we introduce a library augmentation
+                  procedure that refines unsuccessful trajectories, further
+                  enriching the library. SiriuS boosts performance by 2.86\% to
+                  21.88\% on reasoning and biomedical QA and enhances agent
+                  negotiation in competitive settings. Our results show that
+                  SiriuS enhances multi-agent performance while generating
+                  reusable data for self-correction and self-play enhancement in
+                  the future.},
+  urldate      = {2025-10-20}
+}
+
 @ARTICLE{Grill-Monte-Carlo-TreeOptimization-2020,
   title        = {Monte-Carlo tree search as regularized policy optimization},
   author       = {Grill, Jean-Bastien and Altché, Florent and Tang, Yunhao and
@@ -3513,6 +2820,18 @@
                   agents, we publicly release AgentHarm at
                   https://huggingface.co/datasets/ai-safety-institute/AgentHarm.},
   urldate      = {2024-10-22}
+}
+
+@ARTICLE{Agarwal-PerSim-Data-EfficientSimulators-2021,
+  title        = {{PerSim}: Data-Efficient Offline Reinforcement Learning with
+                  Heterogeneous Agents via Personalized Simulators},
+  author       = {Agarwal, Anish and Alomar, Abdullah and Alumootil, Varkey and
+                  Shah, Devavrat and Shen, Dennis and Xu, Zhi and Yang, Cindy},
+  journaltitle = {Advances in Neural Information Processing Systems},
+  volume       = {34},
+  pages        = {18564--18576},
+  date         = {2021-12-06},
+  urldate      = {2024-11-01}
 }
 
 @ARTICLE{Rajbhandari-ZeRO-MemoryModels-2019,
@@ -5228,6 +4547,122 @@
   urldate      = {2025-10-13}
 }
 
+@ARTICLE{Liu-Part-IReasoning-2025,
+  title        = {Part {I}: Tricks or traps? A deep dive into {RL} for {LLM}
+                  reasoning},
+  author       = {Liu, Zihe and Liu, Jiashun and He, Yancheng and Wang, Weixun
+                  and Liu, Jiaheng and Pan, Ling and Hu, Xinyu and Xiong,
+                  Shaopan and Huang, Ju and Hu, Jian and Huang, Shengyi and
+                  Yang, Siran and Wang, Jiamang and Su, Wenbo and Zheng, Bo},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-08-11},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {Reinforcement learning for LLM reasoning has rapidly emerged
+                  as a prominent research area, marked by a significant surge in
+                  related studies on both algorithmic innovations and practical
+                  applications. Despite this progress, several critical
+                  challenges remain, including the absence of standardized
+                  guidelines for employing RL techniques and a fragmented
+                  understanding of their underlying mechanisms. Additionally,
+                  inconsistent experimental settings, variations in training
+                  data, and differences in model initialization have led to
+                  conflicting conclusions, obscuring the key characteristics of
+                  these techniques and creating confusion among practitioners
+                  when selecting appropriate techniques. This paper
+                  systematically reviews widely adopted RL techniques through
+                  rigorous reproductions and isolated evaluations within a
+                  unified open-source framework. We analyze the internal
+                  mechanisms, applicable scenarios, and core principles of each
+                  technique through fine-grained experiments, including datasets
+                  of varying difficulty, model sizes, and architectures. Based
+                  on these insights, we present clear guidelines for selecting
+                  RL techniques tailored to specific setups, and provide a
+                  reliable roadmap for practitioners navigating the RL for the
+                  LLM domain. Finally, we reveal that a minimalist combination
+                  of two techniques can unlock the learning capability of
+                  critic-free policies using vanilla PPO loss. The results
+                  demonstrate that our simple combination consistently improves
+                  performance, surpassing strategies like GRPO and DAPO.},
+  urldate      = {2025-10-20}
+}
+
+@ARTICLE{Schulman-Proximal-PolicyAlgorithms-2017,
+  title        = {Proximal Policy Optimization Algorithms},
+  author       = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and
+                  Radford, Alec and Klimov, Oleg},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2017-07-19},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {We propose a new family of policy gradient methods for
+                  reinforcement learning, which alternate between sampling data
+                  through interaction with the environment, and optimizing a
+                  "surrogate" objective function using stochastic gradient
+                  ascent. Whereas standard policy gradient methods perform one
+                  gradient update per data sample, we propose a novel objective
+                  function that enables multiple epochs of minibatch updates.
+                  The new methods, which we call proximal policy optimization
+                  (PPO), have some of the benefits of trust region policy
+                  optimization (TRPO), but they are much simpler to implement,
+                  more general, and have better sample complexity (empirically).
+                  Our experiments test PPO on a collection of benchmark tasks,
+                  including simulated robotic locomotion and Atari game playing,
+                  and we show that PPO outperforms other online policy gradient
+                  methods, and overall strikes a favorable balance between
+                  sample complexity, simplicity, and wall-time.},
+  urldate      = {2025-10-24}
+}
+
+@ONLINE{Schulman-LoRA-Regret-2025,
+  title     = {{LoRA} Without Regret},
+  author    = {Schulman, John},
+  booktitle = {Thinking Machines Lab},
+  date      = {2025-09-29},
+  abstract  = {How LoRA matches full training performance more broadly than
+               expected.},
+  urldate   = {2025-10-30}
+}
+
+@INPROCEEDINGS{Silver-Deterministic-PolicyAlgorithms-2014,
+  title      = {Deterministic Policy Gradient Algorithms},
+  author     = {Silver, David and Lever, Guy and Heess, Nicolas and Degris,
+                Thomas and Wierstra, Daan and Riedmiller, Martin},
+  booktitle  = {International Conference on Machine Learning},
+  publisher  = {PMLR},
+  eventtitle = {International Conference on Machine Learning},
+  pages      = {387--395},
+  date       = {2014-01-27},
+  abstract   = {In this paper we consider deterministic policy gradient
+                algorithms for reinforcement learning with continuous actions.
+                The deterministic policy gradient has a particularly appealing
+                form: it is the...},
+  urldate    = {2025-11-14},
+  language   = {en}
+}
+
+@ONLINE{Richard-S-Sutton-David-A-McAllester-Satinder-P-Singh-Yishay-Mansour-Policy-GradientApproximation-1999,
+  title   = {Policy Gradient Methods for Reinforcement Learning with Function
+             Approximation},
+  author  = {{Richard S. Sutton, David A. McAllester, Satinder P. Singh, Yishay
+             Mansour}},
+  date    = {1999},
+  urldate = {2025-11-14}
+}
+
+@ONLINE{Jiacai-Liu-Yingru-Li-Yuqian-Fu-Jiawei-Wang-Qian-Liu-Yu-Shen-When-SpeedMismatch-Other,
+  title     = {When Speed Kills Stability: Demystifying {RL} Collapse from the
+               Training-Inference Mismatch},
+  author    = {{Jiacai Liu, Yingru Li, Yuqian Fu, Jiawei Wang, Qian Liu, Yu
+               Shen}},
+  booktitle = {yingru on Notion},
+  abstract  = {A tool that connects everyday work into one space. It gives you
+               and your teams AI tools—search, writing, note-taking—inside an
+               all-in-one, flexible workspace.},
+  urldate   = {2025-11-02},
+  language  = {en}
+}
+
 @ARTICLE{Khatri-Art-ScalingLLMs-2025,
   title        = {The art of scaling reinforcement learning compute for {LLMs}},
   author       = {Khatri, Devvrit and Madaan, Lovish and Tiwari, Rishabh and
@@ -5264,4 +4699,610 @@
                   that brings RL training closer to the predictability long
                   achieved in pre-training.},
   urldate      = {2025-11-03}
+}
+
+@ARTICLE{MiniMax-MiniMax-M1-ScalingAttention-2025,
+  title        = {{MiniMax}-{M1}: Scaling test-time compute efficiently with
+                  lightning attention},
+  author       = {{MiniMax} and Chen, Aili and Li, Aonian and Gong, Bangwei and
+                  Jiang, Binyang and Fei, Bo and Yang, Bo and Shan, Boji and Yu,
+                  Changqing and Wang, Chao and Zhu, Cheng and Xiao, Chengjun and
+                  Du, Chengyu and Zhang, Chi and Qiao, Chu and Zhang, Chunhao
+                  and Du, Chunhui and Guo, Congchao and Chen, Da and Ding,
+                  Deming and Sun, Dianjun and Li, Dong and Jiao, Enwei and Zhou,
+                  Haigang and Zhang, Haimo and Ding, Han and Sun, Haohai and
+                  Feng, Haoyu and Cai, Huaiguang and Zhu, Haichao and Sun, Jian
+                  and Zhuang, Jiaqi and Cai, Jiaren and Song, Jiayuan and Zhu,
+                  Jin and Li, Jingyang and Tian, Jinhao and Liu, Jinli and Xu,
+                  Junhao and Yan, Junjie and Liu, Junteng and He, Junxian and
+                  Feng, Kaiyi and Yang, Ke and Xiao, Kecheng and Han, Le and
+                  Wang, Leyang and Yu, Lianfei and Feng, Liheng and Li, Lin and
+                  Zheng, Lin and Du, Linge and Yang, Lingyu and Zeng, Lunbin and
+                  Yu, Minghui and Tao, Mingliang and Chi, Mingyuan and Zhang,
+                  Mozhi and Lin, Mujie and Hu, Nan and Di, Nongyu and Gao, Peng
+                  and Li, Pengfei and Zhao, Pengyu and Ren, Qibing and Xu, Qidi
+                  and Li, Qile and Wang, Qin and Tian, Rong and Leng, Ruitao and
+                  Chen, Shaoxiang and Chen, Shaoyu and Shi, Shengmin and Weng,
+                  Shitong and Guan, Shuchang and Yu, Shuqi and Li, Sichen and
+                  Zhu, Songquan and Li, Tengfei and Cai, Tianchi and Liang,
+                  Tianrun and Cheng, Weiyu and Kong, Weize and Li, Wenkai and
+                  Chen, Xiancai and Song, Xiangjun and Luo, Xiao and Su, Xiao
+                  and Li, Xiaobo and Han, Xiaodong and Hou, Xinzhu and Lu, Xuan
+                  and Zou, Xun and Shen, Xuyang and Gong, Yan and Ma, Yan and
+                  Wang, Yang and Shi, Yiqi and Zhong, Yiran and Duan, Yonghong
+                  and Fu, Yongxiang and Hu, Yongyi and Gao, Yu and Fan,
+                  Yuanxiang and Yang, Yufeng and Li, Yuhao and Hu, Yulin and
+                  Huang, Yunan and Li, Yunji and Xu, Yunzhi and Mao, Yuxin and
+                  Shi, Yuxuan and Wenren, Yuze and Li, Zehan and Li, Zelin and
+                  Tian, Zhanxu and Zhu, Zhengmao and Fan, Zhenhua and Wu,
+                  Zhenzhen and Xu, Zhichao and Yu, Zhihang and Lyu, Zhiheng and
+                  Jiang, Zhuo and Gao, Zibo and Wu, Zijia and Song, Zijian and
+                  Sun, Zijun},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-06-16},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {We introduce MiniMax-M1, the world's first open-weight,
+                  large-scale hybrid-attention reasoning model. MiniMax-M1 is
+                  powered by a hybrid Mixture-of-Experts (MoE) architecture
+                  combined with a lightning attention mechanism. The model is
+                  developed based on our previous MiniMax-Text-01 model, which
+                  contains a total of 456 billion parameters with 45.9 billion
+                  parameters activated per token. The M1 model natively supports
+                  a context length of 1 million tokens, 8x the context size of
+                  DeepSeek R1. Furthermore, the lightning attention mechanism in
+                  MiniMax-M1 enables efficient scaling of test-time compute.
+                  These properties make M1 particularly suitable for complex
+                  tasks that require processing long inputs and thinking
+                  extensively. MiniMax-M1 is trained using large-scale
+                  reinforcement learning (RL) on diverse problems including
+                  sandbox-based, real-world software engineering environments.
+                  In addition to M1's inherent efficiency advantage for RL
+                  training, we propose CISPO, a novel RL algorithm to further
+                  enhance RL efficiency. CISPO clips importance sampling weights
+                  rather than token updates, outperforming other competitive RL
+                  variants. Combining hybrid-attention and CISPO enables
+                  MiniMax-M1's full RL training on 512 H800 GPUs to complete in
+                  only three weeks, with a rental cost of just \$534,700. We
+                  release two versions of MiniMax-M1 models with 40K and 80K
+                  thinking budgets respectively, where the 40K model represents
+                  an intermediate phase of the 80K training. Experiments on
+                  standard benchmarks show that our models are comparable or
+                  superior to strong open-weight models such as the original
+                  DeepSeek-R1 and Qwen3-235B, with particular strengths in
+                  complex software engineering, tool utilization, and
+                  long-context tasks. We publicly release MiniMax-M1 at
+                  https://github.com/MiniMax-AI/MiniMax-M1.},
+  urldate      = {2025-11-03}
+}
+
+@ARTICLE{Mistral-AI-Magistral-2025,
+  title        = {Magistral},
+  author       = {{Mistral-AI} and Rastogi, Abhinav and Jiang, Albert Q and Lo,
+                  Andy and Berrada, Gabrielle and Lample, Guillaume and Rute,
+                  Jason and Barmentlo, Joep and Yadav, Karmesh and Khandelwal,
+                  Kartik and Chandu, Khyathi Raghavi and Blier, Léonard and
+                  Saulnier, Lucile and Dinot, Matthieu and Darrin, Maxime and
+                  Gupta, Neha and Soletskyi, Roman and Vaze, Sagar and Scao,
+                  Teven Le and Wang, Yihan and Yang, Adam and Liu, Alexander H
+                  and Sablayrolles, Alexandre and Héliou, Amélie and Martin,
+                  Amélie and Ehrenberg, Andy and Agarwal, Anmol and Roux,
+                  Antoine and Darcet, Arthur and Mensch, Arthur and Bout,
+                  Baptiste and Rozière, Baptiste and De Monicault, Baudouin and
+                  Bamford, Chris and Wallenwein, Christian and Renaudin,
+                  Christophe and Lanfranchi, Clémence and Dabert, Darius and
+                  Mizelle, Devon and Casas, Diego de las and Chane-Sane, Elliot
+                  and Fugier, Emilien and Hanna, Emma Bou and Delerce, Gauthier
+                  and Guinet, Gauthier and Novikov, Georgii and Martin,
+                  Guillaume and Jaju, Himanshu and Ludziejewski, Jan and
+                  Chabran, Jean-Hadrien and Delignon, Jean-Malo and Studnia,
+                  Joachim and Amar, Jonas and Roberts, Josselin Somerville and
+                  Denize, Julien and Saxena, Karan and Jain, Kush and Zhao,
+                  Lingxiao and Martin, Louis and Gao, Luyu and Lavaud, Lélio
+                  Renard and Pellat, Marie and Guillaumin, Mathilde and
+                  Felardos, Mathis and Augustin, Maximilian and Seznec, Mickaël
+                  and Raghuraman, Nikhil and Duchenne, Olivier and Wang,
+                  Patricia and von Platen, Patrick and Saffer, Patryk and Jacob,
+                  Paul and Wambergue, Paul and Kurylowicz, Paula and Muddireddy,
+                  Pavankumar Reddy and Chagniot, Philomène and Stock, Pierre and
+                  Agrawal, Pravesh and Sauvestre, Romain and Delacourt, Rémi and
+                  Gandhi, Sanchit and Subramanian, Sandeep and Dalal, Shashwat
+                  and Gandhi, Siddharth and Ghosh, Soham and Mishra, Srijan and
+                  Aithal, Sumukh and Antoniak, Szymon and Schueller, Thibault
+                  and Lavril, Thibaut and Robert, Thomas and Wang, Thomas and
+                  Lacroix, Timothée and Nemychnikova, Valeriia and Paltz, Victor
+                  and Richard, Virgile and Li, Wen-Ding and Marshall, William
+                  and Zhang, Xuanyu and Tang, Yunhao},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-06-12},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {We introduce Magistral, Mistral's first reasoning model and
+                  our own scalable reinforcement learning (RL) pipeline. Instead
+                  of relying on existing implementations and RL traces distilled
+                  from prior models, we follow a ground up approach, relying
+                  solely on our own models and infrastructure. Notably, we
+                  demonstrate a stack that enabled us to explore the limits of
+                  pure RL training of LLMs, present a simple method to force the
+                  reasoning language of the model, and show that RL on text data
+                  alone maintains most of the initial checkpoint's capabilities.
+                  We find that RL on text maintains or improves multimodal
+                  understanding, instruction following and function calling. We
+                  present Magistral Medium, trained for reasoning on top of
+                  Mistral Medium 3 with RL alone, and we open-source Magistral
+                  Small (Apache 2.0) which further includes cold-start data from
+                  Magistral Medium.},
+  urldate      = {2025-11-03}
+}
+
+@ONLINE{Gao-Efficient-RLTraining-Other,
+  title     = {Your Efficient {RL} Framework Secretly Brings You Off-Policy {RL}
+               Training},
+  author    = {Gao, Jianfeng},
+  booktitle = {fengyao on Notion},
+  abstract  = {Feng Yao* Liyuan Liu* Dinghuai Zhang Chengyu Dong Jingbo Shang
+               Jianfeng Gao},
+  urldate   = {2025-11-06},
+  language  = {en}
+}
+
+@ARTICLE{Liu-Understanding-R1-zero-likePerspective-2025,
+  title        = {Understanding {R1}-zero-like training: A critical perspective},
+  author       = {Liu, Zichen and Chen, Changyu and Li, Wenjun and Qi, Penghui
+                  and Pang, Tianyu and Du, Chao and Lee, Wee Sun and Lin, Min},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-10-06},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {DeepSeek-R1-Zero has shown that reinforcement learning (RL) at
+                  scale can directly enhance the reasoning capabilities of LLMs
+                  without supervised fine-tuning. In this work, we critically
+                  examine R1-Zero-like training by analyzing its two core
+                  components: base models and RL. We investigate a wide range of
+                  base models, including DeepSeek-V3-Base, to understand how
+                  pretraining characteristics influence RL performance. Our
+                  analysis reveals that DeepSeek-V3-Base already exhibit ''Aha
+                  moment'', while Qwen2.5 base models demonstrate strong
+                  reasoning capabilities even without prompt templates,
+                  suggesting potential pretraining biases. Additionally, we
+                  identify an optimization bias in Group Relative Policy
+                  Optimization (GRPO), which artificially increases response
+                  length (especially for incorrect outputs) during training. To
+                  address this, we introduce Dr. GRPO, an unbiased optimization
+                  method that improves token efficiency while maintaining
+                  reasoning performance. Leveraging these insights, we present a
+                  minimalist R1-Zero recipe that achieves 43.3\% accuracy on
+                  AIME 2024 with a 7B base model, establishing a new
+                  state-of-the-art. Our code is available at
+                  https://github.com/sail-sg/understand-r1-zero.},
+  urldate      = {2025-11-06}
+}
+
+@ARTICLE{Zheng-Group-SequenceOptimization-2025,
+  title        = {Group Sequence Policy Optimization},
+  author       = {Zheng, Chujie and Liu, Shixuan and Li, Mingze and Chen,
+                  Xiong-Hui and Yu, Bowen and Gao, Chang and Dang, Kai and Liu,
+                  Yuqiong and Men, Rui and Yang, An and Zhou, Jingren and Lin,
+                  Junyang},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-07-28},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {This paper introduces Group Sequence Policy Optimization
+                  (GSPO), our stable, efficient, and performant reinforcement
+                  learning algorithm for training large language models. Unlike
+                  previous algorithms that adopt token-level importance ratios,
+                  GSPO defines the importance ratio based on sequence likelihood
+                  and performs sequence-level clipping, rewarding, and
+                  optimization. We demonstrate that GSPO achieves superior
+                  training efficiency and performance compared to the GRPO
+                  algorithm, notably stabilizes Mixture-of-Experts (MoE) RL
+                  training, and has the potential for simplifying the design of
+                  RL infrastructure. These merits of GSPO have contributed to
+                  the remarkable improvements in the latest Qwen3 models.},
+  urldate      = {2025-11-06}
+}
+
+@ARTICLE{Abdulhai-Consistently-SimulatingLearning-2025,
+  title        = {Consistently simulating human personas with multi-turn
+                  reinforcement learning},
+  author       = {Abdulhai, Marwa and Cheng, Ryan and Clay, Donovan and Althoff,
+                  Tim and Levine, Sergey and Jaques, Natasha},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-10-31},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {Large Language Models (LLMs) are increasingly used to simulate
+                  human users in interactive settings such as therapy,
+                  education, and social role-play. While these simulations
+                  enable scalable training and evaluation of AI agents,
+                  off-the-shelf LLMs often drift from their assigned personas,
+                  contradict earlier statements, or abandon role-appropriate
+                  behavior. We introduce a unified framework for evaluating and
+                  improving persona consistency in LLM-generated dialogue. We
+                  define three automatic metrics: prompt-to-line consistency,
+                  line-to-line consistency, and Q\&A consistency, that capture
+                  different types of persona drift and validate each against
+                  human annotations. Using these metrics as reward signals, we
+                  apply multi-turn reinforcement learning to fine-tune LLMs for
+                  three user roles: a patient, a student, and a social chat
+                  partner. Our method reduces inconsistency by over 55\%,
+                  resulting in more coherent and faithful simulated users.},
+  urldate      = {2025-11-06}
+}
+
+@ARTICLE{Shen-Completion-neq-Agents-2025,
+  title        = {Completion $\neq$ collaboration: Scaling collaborative effort
+                  with agents},
+  author       = {Shen, Shannon Zejiang and Chen, Valerie and Gu, Ken and Ross,
+                  Alexis and Ma, Zixian and Ross, Jillian and Gu, Alex and Si,
+                  Chenglei and Chi, Wayne and Peng, Andi and Shen, Jocelyn J and
+                  Talwalkar, Ameet and Wu, Tongshuang and Sontag, David},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-10-30},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {Current evaluations of agents remain centered around one-shot
+                  task completion, failing to account for the inherently
+                  iterative and collaborative nature of many real-world
+                  problems, where human goals are often underspecified and
+                  evolve. We argue for a shift from building and assessing task
+                  completion agents to developing collaborative agents, assessed
+                  not only by the quality of their final outputs but by how well
+                  they engage with and enhance human effort throughout the
+                  problem-solving process. To support this shift, we introduce
+                  collaborative effort scaling, a framework that captures how an
+                  agent's utility grows with increasing user involvement.
+                  Through case studies and simulated evaluations, we show that
+                  state-of-the-art agents often underperform in multi-turn,
+                  real-world scenarios, revealing a missing ingredient in agent
+                  design: the ability to sustain engagement and scaffold user
+                  understanding. Collaborative effort scaling offers a lens for
+                  diagnosing agent behavior and guiding development toward more
+                  effective interactions.},
+  urldate      = {2025-11-06}
+}
+
+@ARTICLE{Ilyas-Closer-LookGradients-2018,
+  title        = {A closer look at deep policy gradients},
+  author       = {Ilyas, Andrew and Engstrom, Logan and Santurkar, Shibani and
+                  Tsipras, Dimitris and Janoos, Firdaus and Rudolph, Larry and
+                  Madry, Aleksander},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2018-11-06},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {We study how the behavior of deep policy gradient algorithms
+                  reflects the conceptual framework motivating their
+                  development. To this end, we propose a fine-grained analysis
+                  of state-of-the-art methods based on key elements of this
+                  framework: gradient estimation, value prediction, and
+                  optimization landscapes. Our results show that the behavior of
+                  deep policy gradient algorithms often deviates from what their
+                  motivating framework would predict: the surrogate objective
+                  does not match the true reward landscape, learned value
+                  estimators fail to fit the true value function, and gradient
+                  estimates poorly correlate with the "true" gradient. The
+                  mismatch between predicted and empirical behavior we uncover
+                  highlights our poor understanding of current methods, and
+                  indicates the need to move beyond current benchmark-centric
+                  evaluation methods.},
+  urldate      = {2025-11-06}
+}
+
+@INBOOK{Singh-Learning-State-estimationProcesses-1994,
+  title     = {Learning without state-estimation in partially observable
+               markovian decision processes},
+  author    = {Singh, Satinder P and Jaakkola, Tommi and Jordan, Michael I},
+  booktitle = {Machine Learning Proceedings 1994},
+  publisher = {Elsevier},
+  pages     = {284--292},
+  date      = {1994-01-01},
+  abstract  = {Reinforcement learning (RL) algorithms provide a sound
+               theoretical basis for building learning control architectures for
+               embedded agents. Unfortunatel…},
+  urldate   = {2025-11-06}
+}
+
+@ARTICLE{Wu-DeepSearch-OvercomeSearch-2025,
+  title        = {{DeepSearch}: Overcome the bottleneck of reinforcement
+                  learning with verifiable rewards via Monte Carlo Tree Search},
+  author       = {Wu, Fang and Xuan, Weihao and Qi, Heli and Lu, Ximing and Tu,
+                  Aaron and Li, Li Erran and Choi, Yejin},
+  journaltitle = {arXiv [cs.AI]},
+  date         = {2025-10-01},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.AI},
+  abstract     = {Although RLVR has become an essential component for developing
+                  advanced reasoning skills in LLMs, contemporary studies have
+                  documented training plateaus that emerge following thousands
+                  of optimization steps, demonstrating notable decreases in
+                  performance gains despite increased computational investment.
+                  This limitation stems from the sparse exploration patterns
+                  inherent in current RLVR practices, where models rely on
+                  limited rollouts that often miss critical reasoning paths and
+                  fail to provide systematic coverage of the solution space. We
+                  present DeepSearch, a framework that integrates Monte Carlo
+                  Tree Search directly into RLVR training. In contrast to
+                  existing methods that rely on tree search only at inference,
+                  DeepSearch embeds structured search into the training loop,
+                  enabling systematic exploration and fine-grained credit
+                  assignment across reasoning steps. Through training-time
+                  exploration, DeepSearch addresses the fundamental bottleneck
+                  of insufficient exploration, which leads to diminishing
+                  performance improvements over prolonged training steps. Our
+                  contributions include: (1) a global frontier selection
+                  strategy that prioritizes promising nodes across the search
+                  tree, (2) selection with entropy-based guidance that
+                  identifies confident paths for supervision, and (3) adaptive
+                  replay buffer training with solution caching for efficiency.
+                  Experiments on mathematical reasoning benchmarks show that
+                  DeepSearch achieves 62.95\% average accuracy and establishes a
+                  new state-of-the-art for 1.5B reasoning models - using 5.7x
+                  fewer GPU hours than extended training approaches. These
+                  results highlight the importance of strategic exploration over
+                  brute-force scaling and demonstrate the promise of algorithmic
+                  innovation for advancing RLVR methodologies. DeepSearch
+                  establishes a new direction for scaling reasoning capabilities
+                  through systematic search rather than prolonged computation.},
+  urldate      = {2025-11-06}
+}
+
+@ARTICLE{Yue-Reinforcement-Learning-2025,
+  title        = {Does reinforcement Learning really incentivize reasoning
+                  capacity in {LLMs} beyond the base model?},
+  author       = {Yue, Yang and Chen, Zhiqi and Lu, Rui and Zhao, Andrew and
+                  Wang, Zhaokai and Yue, Yang and Song, Shiji and Huang, Gao},
+  journaltitle = {arXiv [cs.AI]},
+  date         = {2025-10-23},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.AI},
+  abstract     = {Reinforcement Learning with Verifiable Rewards (RLVR) has
+                  recently demonstrated notable success in enhancing the
+                  reasoning performance of large language models (LLMs),
+                  particularly on mathematics and programming tasks. Similar to
+                  how traditional RL helps agents explore and learn new
+                  strategies, RLVR is believed to enable LLMs to continuously
+                  self-improve, thus acquiring novel reasoning abilities beyond
+                  those of the corresponding base models. In this study we
+                  critically examine the current state of RLVR by systematically
+                  probing the reasoning capability boundaries of RLVR-trained
+                  LLMs across various model families, RL algorithms, and math,
+                  coding, and visual reasoning benchmarks, using pass@k at large
+                  k values as the evaluation metric. Surprisingly, we find that
+                  the current training setup does not elicit fundamentally new
+                  reasoning patterns. While RLVR-trained models outperform their
+                  base models at small k (e.g., k = 1), the base models achieve
+                  a higher pass@k score when k is large. Coverage and perplexity
+                  analyses show that the observed reasoning abilities originate
+                  from and are bounded by the base model. Treating the base
+                  model as an upper bound, our quantitative analysis shows that
+                  six popular RLVR algorithms perform similarly and remain far
+                  from optimal in leveraging the potential of the base model. By
+                  contrast, we find that distillation can introduce new
+                  reasoning patterns from the teacher and genuinely expand the
+                  model's reasoning capabilities. Overall, our findings suggest
+                  that current RLVR methods have not yet realized the potential
+                  of RL to elicit truly novel reasoning abilities in LLMs. This
+                  highlights the need for improved RL paradigms, such as
+                  continual scaling and multi-turn agent-environment
+                  interaction, to unlock this potential.},
+  urldate      = {2025-11-12}
+}
+
+@ARTICLE{Liao-Efficacy-LanguageGames-2024,
+  title        = {Efficacy of language model self-play in non-zero-sum games},
+  author       = {Liao, Austen and Tomlin, Nicholas and Klein, Dan},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2024-06-26},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {Game-playing agents like AlphaGo have achieved superhuman
+                  performance through self-play, which is theoretically
+                  guaranteed to yield optimal policies in competitive games.
+                  However, most language tasks are partially or fully
+                  cooperative, so it is an open question whether techniques like
+                  self-play can effectively be used to improve language models.
+                  We empirically investigate this question in a negotiation game
+                  setting known as Deal or No Deal (DoND). Crucially, the
+                  objective in DoND can be modified to produce a fully
+                  cooperative game, a strictly competitive one, or anything in
+                  between. We finetune language models in self-play over
+                  multiple rounds of filtered behavior cloning in DoND for each
+                  of these objectives and evaluate them in self-play and in
+                  collaboration with humans. We find that language models
+                  improve substantially in self-play, achieving 14-17x higher
+                  scores in task reward after finetuning. Further, the trained
+                  models generalize to both cooperation and competition with
+                  humans, scoring 2.5-6x higher than base models. We view these
+                  results as an early promising sign for language model
+                  self-play in cooperative settings, despite a lack of
+                  theoretical guarantees.},
+  urldate      = {2025-12-03}
+}
+
+@ARTICLE{Jin-Revisiting-EntropyModels-2025,
+  title        = {Revisiting entropy in reinforcement learning for large
+                  reasoning models},
+  author       = {Jin, Renren and Gao, Pengzhi and Ren, Yuqi and Han, Zhuowen
+                  and Zhang, Tongxuan and Huang, Wuwei and Liu, Wei and Luan,
+                  Jian and Xiong, Deyi},
+  journaltitle = {arXiv [cs.CL]},
+  date         = {2025-11-08},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.CL},
+  abstract     = {Reinforcement learning with verifiable rewards (RLVR) has
+                  emerged as a predominant approach for enhancing the reasoning
+                  capabilities of large language models (LLMs). However, the
+                  entropy of LLMs usually collapses during RLVR training,
+                  causing premature convergence to suboptimal local minima and
+                  hinder further performance improvement. Although various
+                  approaches have been proposed to mitigate entropy collapse, a
+                  comprehensive study of entropy in RLVR remains lacking. To
+                  address this gap, we conduct extensive experiments to
+                  investigate the entropy dynamics of LLMs trained with RLVR and
+                  analyze how model entropy correlates with response diversity,
+                  calibration, and performance across various benchmarks. Our
+                  findings reveal that the number of off-policy updates, the
+                  diversity of training data, and the clipping thresholds in the
+                  optimization objective are critical factors influencing the
+                  entropy of LLMs trained with RLVR. Moreover, we theoretically
+                  and empirically demonstrate that tokens with positive
+                  advantages are the primary contributors to entropy collapse,
+                  and that model entropy can be effectively regulated by
+                  adjusting the relative loss weights of tokens with positive
+                  and negative advantages during training.},
+  urldate      = {2025-12-03}
+}
+
+@ARTICLE{Cui-Entropy-MechanismModels-2025,
+  title        = {The entropy mechanism of reinforcement learning for reasoning
+                  language models},
+  author       = {Cui, Ganqu and Zhang, Yuchen and Chen, Jiacheng and Yuan,
+                  Lifan and Wang, Zhi and Zuo, Yuxin and Li, Haozhan and Fan,
+                  Yuchen and Chen, Huayu and Chen, Weize and Liu, Zhiyuan and
+                  Peng, Hao and Bai, Lei and Ouyang, Wanli and Cheng, Yu and
+                  Zhou, Bowen and Ding, Ning},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-05-28},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {This paper aims to overcome a major obstacle in scaling RL for
+                  reasoning with LLMs, namely the collapse of policy entropy.
+                  Such phenomenon is consistently observed across vast RL runs
+                  without entropy intervention, where the policy entropy dropped
+                  sharply at the early training stage, this diminished
+                  exploratory ability is always accompanied with the saturation
+                  of policy performance. In practice, we establish a
+                  transformation equation R=-a*e\textasciicircumH+b between
+                  entropy H and downstream performance R. This empirical law
+                  strongly indicates that, the policy performance is traded from
+                  policy entropy, thus bottlenecked by its exhaustion, and the
+                  ceiling is fully predictable H=0, R=-a+b. Our finding
+                  necessitates entropy management for continuous exploration
+                  toward scaling compute for RL. To this end, we investigate
+                  entropy dynamics both theoretically and empirically. Our
+                  derivation highlights that, the change in policy entropy is
+                  driven by the covariance between action probability and the
+                  change in logits, which is proportional to its advantage when
+                  using Policy Gradient-like algorithms. Empirical study shows
+                  that, the values of covariance term and entropy differences
+                  matched exactly, supporting the theoretical conclusion.
+                  Moreover, the covariance term stays mostly positive throughout
+                  training, further explaining why policy entropy would decrease
+                  monotonically. Through understanding the mechanism behind
+                  entropy dynamics, we motivate to control entropy by
+                  restricting the update of high-covariance tokens.
+                  Specifically, we propose two simple yet effective techniques,
+                  namely Clip-Cov and KL-Cov, which clip and apply KL penalty to
+                  tokens with high covariances respectively. Experiments show
+                  that these methods encourage exploration, thus helping policy
+                  escape entropy collapse and achieve better downstream
+                  performance.},
+  urldate      = {2025-12-04}
+}
+
+@ARTICLE{Chen-Beyond-High-entropyLLMs-2025,
+  title        = {Beyond high-entropy exploration: Correctness-aware low-entropy
+                  segment-based advantage shaping for reasoning {LLMs}},
+  author       = {Chen, Xinzhu and Li, Xuesheng and Sun, Zhongxiang and Yu,
+                  Weijie},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2025-11-30},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {Reinforcement Learning with Verifiable Rewards (RLVR) has
+                  become a central approach for improving the reasoning ability
+                  of large language models. Recent work studies RLVR through
+                  token entropy, arguing that high-entropy tokens drive
+                  exploration and should receive stronger updates. However, they
+                  overlook the fact that most of a reasoning trajectory consists
+                  of low-entropy segments that encode stable and reusable
+                  structural patterns. Through qualitative and quantitative
+                  analyses, we find that the overlap of low-entropy segments
+                  across correct responses strongly correlates with model
+                  accuracy, while overlaps involving incorrect responses exhibit
+                  stable but unproductive patterns. Motivated by these findings,
+                  we propose LESS, a correctness-aware reinforcement framework
+                  that performs fine-grained advantage modulation over
+                  low-entropy segments. LESS amplifies segments unique to
+                  correct responses, suppresses those unique to incorrect ones,
+                  and neutralizes segments shared by both, while preserving
+                  high-entropy exploration in the underlying RL algorithm.
+                  Instantiated on top of the popular GRPO, LESS consistently
+                  improves accuracy over strong RL baselines across three
+                  backbones and six math benchmarks, achieves stronger
+                  robustness of the performance floor.},
+  urldate      = {2025-12-08}
+}
+
+@ARTICLE{Bellemare-Distributional-PerspectiveLearning-2017,
+  title        = {A distributional perspective on reinforcement learning},
+  author       = {Bellemare, Marc G and Dabney, Will and Munos, Rémi},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2017-07-21},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {In this paper we argue for the fundamental importance of the
+                  value distribution: the distribution of the random return
+                  received by a reinforcement learning agent. This is in
+                  contrast to the common approach to reinforcement learning
+                  which models the expectation of this return, or value.
+                  Although there is an established body of literature studying
+                  the value distribution, thus far it has always been used for a
+                  specific purpose such as implementing risk-aware behaviour. We
+                  begin with theoretical results in both the policy evaluation
+                  and control settings, exposing a significant distributional
+                  instability in the latter. We then use the distributional
+                  perspective to design a new algorithm which applies Bellman's
+                  equation to the learning of approximate value distributions.
+                  We evaluate our algorithm using the suite of games from the
+                  Arcade Learning Environment. We obtain both state-of-the-art
+                  results and anecdotal evidence demonstrating the importance of
+                  the value distribution in approximate reinforcement learning.
+                  Finally, we combine theoretical and empirical evidence to
+                  highlight the ways in which the value distribution impacts
+                  learning in the approximate setting.},
+  urldate      = {2025-12-12}
+}
+
+@ARTICLE{Farebrother-Stop-RegressingRL-2024,
+  title        = {Stop regressing: Training value functions via classification
+                  for scalable deep {RL}},
+  author       = {Farebrother, Jesse and Orbay, Jordi and Vuong, Quan and Taïga,
+                  Adrien Ali and Chebotar, Yevgen and Xiao, Ted and Irpan, Alex
+                  and Levine, Sergey and Castro, Pablo Samuel and Faust,
+                  Aleksandra and Kumar, Aviral and Agarwal, Rishabh},
+  journaltitle = {arXiv [cs.LG]},
+  date         = {2024-03-06},
+  eprinttype   = {arXiv},
+  eprintclass  = {cs.LG},
+  abstract     = {Value functions are a central component of deep reinforcement
+                  learning (RL). These functions, parameterized by neural
+                  networks, are trained using a mean squared error regression
+                  objective to match bootstrapped target values. However,
+                  scaling value-based RL methods that use regression to large
+                  networks, such as high-capacity Transformers, has proven
+                  challenging. This difficulty is in stark contrast to
+                  supervised learning: by leveraging a cross-entropy
+                  classification loss, supervised methods have scaled reliably
+                  to massive networks. Observing this discrepancy, in this
+                  paper, we investigate whether the scalability of deep RL can
+                  also be improved simply by using classification in place of
+                  regression for training value functions. We demonstrate that
+                  value functions trained with categorical cross-entropy
+                  significantly improves performance and scalability in a
+                  variety of domains. These include: single-task RL on Atari
+                  2600 games with SoftMoEs, multi-task RL on Atari with
+                  large-scale ResNets, robotic manipulation with Q-transformers,
+                  playing Chess without search, and a language-agent Wordle task
+                  with high-capacity Transformers, achieving state-of-the-art
+                  results on these domains. Through careful analysis, we show
+                  that the benefits of categorical cross-entropy primarily stem
+                  from its ability to mitigate issues inherent to value-based
+                  RL, such as noisy targets and non-stationarity. Overall, we
+                  argue that a simple shift to training value functions with
+                  categorical cross-entropy can yield substantial improvements
+                  in the scalability of deep RL at little-to-no cost.},
+  urldate      = {2025-12-19}
 }
